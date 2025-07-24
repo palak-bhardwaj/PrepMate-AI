@@ -22,7 +22,7 @@ const DashboardLayout = ({ children }) => {
   }
 
   return (
-    <div>
+    <div className="bg-gradient-to-b from-[#fafdff] to-[#f0f6ff] min-h-screen relative overflow-hidden">
       <Navbar />
       <div>{children}</div>
     </div>

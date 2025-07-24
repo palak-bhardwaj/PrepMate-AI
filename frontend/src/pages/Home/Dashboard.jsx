@@ -77,7 +77,7 @@ const Dashboard = () => {
             />
           ))}
         </div>
-        <button className='h-12 md:h-12 flex items-center justify-center gap-3 bg-linear-to-r from-[#7D1C4A] to-[#670D2F] text-sm font-semibold text-white px-7 py-2.5 rounded-full hover:bg-black hover:text-white transition-colors cursor-pointer hover:shadow-2xl hover:shadow-[#670D2F] fixed bottom-10 md:bottom-20 right-10 md:right-20' onClick={() => setOpenCreateModal(true)}>
+        <button className='h-12 md:h-12 btn-primary flex items-center justify-center gap-3 text-sm font-semibold text-white px-7 py-2.5 rounded-full hover:bg-black transition-colors cursor-pointer hover:shadow-2xl hover:shadow-[#2f5f77] fixed bottom-10 md:bottom-20 right-10 md:right-20' onClick={() => setOpenCreateModal(true)}>
           <LuPlus className='text-2xl text-white' />
           Add New 
         </button>
@@ -98,17 +98,18 @@ const Dashboard = () => {
       <Modal
         isOpen={openDeleteAlert?.open}
         onClose={() => {
-          setOpenDeleteAlert({open: false, data: null});
+            setOpenDeleteAlert({ open: false, data: null });
         }}
         title="Delete Alert"
-      >
-        <div className='w-[30vw]'>
-          <DeleteAlertContent
+        >
+        <div className="w-[90vw] max-w-md bg-white rounded-xl p-4 shadow-lg border border-[var(--color-card-border)]">
+            <DeleteAlertContent
             content="Are you sure you want to delete this session detail?"
             onDelete={() => deleteSession(openDeleteAlert.data)}
-          />
+            />
         </div>
-      </Modal>
+       </Modal>
+
     </DashboardLayout>
   );
 };
