@@ -8,7 +8,7 @@ import { API_PATHS } from '../../utils/apiPaths';
 
 const SignUp = ({ setCurrentPage }) => {
   const [formData, setFormData] = useState({
-    fullName: '',
+    name: '',
     email: '',
     password: '',
     education: '',
@@ -25,30 +25,32 @@ const SignUp = ({ setCurrentPage }) => {
 
   const handleSignUp = async (e) => {
     e.preventDefault();
-    const { fullName, email, password, education, goal } = formData;
+    const { name, email, password, education, goal } = formData;  // ✅ FIXED
 
-    if (!fullName || !email || !password || !education || !goal) {
-      setError('Please fill in all required fields.');
-      return;
+    if (!name || !email || !password || !education || !goal) {
+        setError('Please fill in all required fields.');
+        return;
     }
+
     if (!validateEmail(email)) {
-      setError('Please enter a valid email address.');
-      return;
+        setError('Please enter a valid email address.');
+        return;
     }
 
     setError('');
     try {
-      const res = await axiosInstance.post(API_PATHS.AUTH.REGISTER, formData);
-      const { token } = res.data;
-      if (token) {
+        const res = await axiosInstance.post(API_PATHS.AUTH.REGISTER, formData);
+        const { token } = res.data;
+        if (token) {
         localStorage.setItem('token', token);
         updateUser(res.data);
         navigate('/dashboard');
-      }
+        }
     } catch (err) {
-      setError(err.response?.data?.message || 'Something went wrong.');
+        setError(err.response?.data?.message || 'Something went wrong.');
     }
   };
+
 
   return (
     <div className="mx-auto w-full max-w-xl p-6 sm:p-8 bg-white border border-[#c6e6ea] rounded-xl shadow-lg">
@@ -62,9 +64,9 @@ const SignUp = ({ setCurrentPage }) => {
         className="grid grid-cols-1 sm:grid-cols-2 gap-4"
       >
         <Input
-          value={formData.fullName}
-          onChange={handleChange('fullName')}
-          label="Full Name"
+          value={formData.name}
+          onChange={handleChange('name')}
+          label="Name"
           placeholder="John Doe"
           type="text"
         />
