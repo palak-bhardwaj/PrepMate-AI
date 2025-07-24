@@ -1,0 +1,92 @@
+export const PREP_TOPICS = [
+  {
+    id: 'oops',
+    title: 'Object-Oriented Programming (OOPs)',
+    description: 'Understand the core principles like Encapsulation, Abstraction, Inheritance, and Polymorphism.',
+    tags: ['Classes', 'Objects', 'Polymorphism', 'Abstraction'],
+  },
+  {
+    id: 'cn',
+    title: 'Computer Networks',
+    description: 'Grasp the fundamentals of networking layers, protocols, and security concepts.',
+    tags: ['OSI Model', 'TCP/IP', 'Routing', 'HTTP/HTTPS'],
+  },
+  {
+    id: 'dbms',
+    title: 'Database Management System (DBMS)',
+    description: 'Learn how databases work and how to optimize queries.',
+    tags: ['SQL', 'ER Diagrams', 'Normalization', 'Transactions'],
+  },
+  {
+    id: 'mysql',
+    title: 'MySQL',
+    description: 'Practice relational database queries and operations.',
+    tags: ['SELECT', 'JOIN', 'GROUP BY', 'Indexes'],
+  },
+  {
+    id: 'se',
+    title: 'Software Engineering',
+    description: 'Understand the SDLC, agile methodologies, and software design principles.',
+    tags: ['SDLC', 'Agile', 'UML', 'Design Patterns'],
+  },
+  {
+    id: 'c',
+    title: 'C Programming',
+    description: 'Foundation of programming logic, memory management and syntax.',
+    tags: ['Pointers', 'Arrays', 'Structures', 'Loops'],
+  },
+  {
+    id: 'cpp',
+    title: 'C++',
+    description: 'Build upon C with OOP features and STL.',
+    tags: ['OOPs', 'STL', 'Classes', 'Inheritance'],
+  },
+  {
+    id: 'java',
+    title: 'Java',
+    description: 'Strong OOP language used in enterprise applications.',
+    tags: ['JVM', 'OOPs', 'Collections', 'Multithreading'],
+  },
+  {
+    id: 'python',
+    title: 'Python',
+    description: 'Popular scripting and general-purpose language.',
+    tags: ['Syntax', 'Libraries', 'OOPs', 'Pandas'],
+  },
+  {
+    id: 'dsa',
+    title: 'Data Structures & Algorithms',
+    description: 'Master the art of problem-solving using efficient code.',
+    tags: ['Arrays', 'Trees', 'Graphs', 'DP'],
+  },
+  {
+    id: 'fullstack',
+    title: 'Full Stack Web Development',
+    description: 'Learn both frontend and backend technologies for web development.',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express'],
+  },
+  {
+    id: 'android',
+    title: 'Android Development',
+    description: 'Build mobile apps using Java/Kotlin and Android Studio.',
+    tags: ['Kotlin', 'XML', 'Jetpack', 'Activities'],
+  },
+  {
+    id: 'aptitude',
+    title: 'Aptitude',
+    description: 'Sharpen your problem-solving and logical reasoning for placements.',
+    tags: ['Quant', 'Logical Reasoning', 'Puzzles', 'Arithmetic'],
+  },
+  {
+    id: 'datasci',
+    title: 'Data Science',
+    description: 'Gain insights from data using analytics and machine learning.',
+    tags: ['Pandas', 'EDA', 'Numpy', 'Matplotlib'],
+  },
+  {
+    id: 'aiml',
+    title: 'AI / ML',
+    description: 'Understand AI and build ML models for classification, prediction, and clustering.',
+    tags: ['Regression', 'Supervised', 'NLP', 'Sklearn'],
+  },
+];
