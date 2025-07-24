@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../../context/userContext';
 import Navbar from './Navbar';
 
-const DashboardLayout = ({ children }) => {
+const DashboardLayout = ({ children, onAddSession }) => {
   const { user, loading } = useContext(UserContext);
   const navigate = useNavigate();
 
@@ -23,7 +23,7 @@ const DashboardLayout = ({ children }) => {
 
   return (
     <div className="bg-gradient-to-b from-[#fafdff] to-[#f0f6ff] min-h-screen relative overflow-hidden">
-      <Navbar />
+      <Navbar onAddSession={onAddSession} />
       <div>{children}</div>
     </div>
   );

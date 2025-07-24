@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { LuPlus } from "react-icons/lu";
 import { CARD_BG } from "../../utils/data";
 import toast from "react-hot-toast";
 import DashboardLayout from '../../components/layouts/DashboardLayout';
@@ -11,14 +10,13 @@ import moment from "moment";
 import Modal from '../../components/Modal';
 import CreateSessionForm from './CreateSessionForm';
 import DeleteAlertContent from '../../components/DeleteAlertContent';
-import PrepTopicsGrid from '../../components/Cards/PrepTopicsGrid'; // ✅ import
+import PrepTopicsGrid from '../../components/Cards/PrepTopicsGrid';
 
 const Dashboard = () => {
   const navigate = useNavigate();
 
   const [openCreateModal, setOpenCreateModal] = useState(false);
   const [sessions, setSessions] = useState([]);
-
   const [openDeleteAlert, setOpenDeleteAlert] = useState({
     open: false,
     data: null,
@@ -49,7 +47,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <DashboardLayout>
+    <DashboardLayout onAddSession={() => setOpenCreateModal(true)}>
       <div className='w-9/10 container mx-auto pt-4 pb-4'>
         
         {/* 🔁 User Sessions */}
@@ -74,15 +72,6 @@ const Dashboard = () => {
           ))}
         </div>
 
-        {/* ➕ Add Session Button */}
-        <button
-          className='h-12 md:h-12 btn-primary flex items-center justify-center gap-3 text-sm font-semibold text-white px-7 py-2.5 rounded-full hover:bg-black transition-colors cursor-pointer hover:shadow-2xl hover:shadow-[#2f5f77] fixed bottom-10 md:bottom-20 right-10 md:right-20'
-          onClick={() => setOpenCreateModal(true)}
-        >
-          <LuPlus className='text-2xl text-white' />
-          Add New
-        </button>
-
         {/* 🧠 Pre-Filled Prep Topics Grid */}
         <div className="mt-10 px-4 md:px-0">
           <h2 className="text-xl font-semibold mb-4 text-[var(--color-text-main)]">
@@ -91,7 +80,6 @@ const Dashboard = () => {
           <PrepTopicsGrid
             onTopicSelect={(topic) => {
               toast.success(`Explore: ${topic.title}`);
-              // Or: navigate(`/prep/${topic.id}`);
             }}
           />
         </div>

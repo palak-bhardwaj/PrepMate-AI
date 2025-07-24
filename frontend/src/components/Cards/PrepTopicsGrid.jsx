@@ -3,24 +3,29 @@ import { PREP_TOPICS } from '../../utils/prepTopics';
 
 const PrepTopicsGrid = ({ onTopicSelect }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-      {PREP_TOPICS.map(topic => (
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
+      {PREP_TOPICS.map((topic) => (
         <div
           key={topic.id}
           onClick={() => onTopicSelect(topic)}
-          className="card cursor-pointer hover:shadow-xl transition bg-white border border-[var(--color-card-border)] rounded-xl p-5"
+          className="bg-white border border-[var(--color-card-border)] rounded-2xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 cursor-pointer"
         >
-          <h3 className="text-lg font-bold text-[var(--color-text-main)] mb-2">
+          {/* Title */}
+          <h3 className="text-lg font-semibold text-[var(--color-accent-dark)] mb-2">
             {topic.title}
           </h3>
-          <p className="text-sm text-[var(--color-text-muted)] mb-2">
+
+          {/* Description */}
+          <p className="text-sm text-[var(--color-text-muted)] leading-relaxed mb-3">
             {topic.description}
           </p>
-          <div className="flex flex-wrap gap-2 mt-2">
-            {topic.tags.map((tag, i) => (
+
+          {/* Tags */}
+          <div className="flex flex-wrap gap-2">
+            {topic.tags.map((tag, index) => (
               <span
-                key={i}
-                className="text-xs bg-[var(--color-bg-light)] text-[var(--color-text-main)] px-2 py-1 rounded-full border border-[var(--color-accent-dark)]"
+                key={index}
+                className="text-[11px] bg-[var(--color-bg-light)] text-[var(--color-text-main)] px-2 py-1 rounded-full border border-[var(--color-accent-dark)]"
               >
                 {tag}
               </span>
