@@ -1,16 +1,32 @@
-import React, { useContext } from 'react'
-import { UserContext } from '../../context/userContext'
-import Navbar from './Navbar'
+import React, { useContext, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { UserContext } from '../../context/userContext';
+import Navbar from './Navbar';
 
-const DashboardLayout = ({children}) => {
-    const {user} = useContext(UserContext)
+const DashboardLayout = ({ children }) => {
+  const { user, loading } = useContext(UserContext);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!loading && !user) {
+      navigate('/');
+    }
+  }, [loading, user, navigate]);
+
+  if (loading) {
     return (
+      <div className="flex items-center justify-center h-screen">
+        <p className="text-gray-600 text-sm">Loading...</p>
+      </div>
+    );
+  }
+
+  return (
     <div>
-        <Navbar/>
-
-        {user && <div>{children}</div>}
+      <Navbar />
+      <div>{children}</div>
     </div>
-  )
-}
+  );
+};
 
-export default DashboardLayout
+export default DashboardLayout;

@@ -8,7 +8,6 @@ import Modal from '../components/Modal';
 import Login from './Auth/Login';
 import SignUp from './Auth/SignUp';
 import { UserContext } from '../context/userContext';
-import ProfileInfoCard from '../components/Cards/ProfileInfoCard';
 
 const LandingPage = () => {
   const { user } = useContext(UserContext);
@@ -38,9 +37,7 @@ const LandingPage = () => {
             <div className="text-2xl font-bold text-[var(--color-text-main)]">
               Interview PrepMateAI
             </div>
-            {user ? (
-              <ProfileInfoCard />
-            ) : (
+            {!user && (
               <button className="btn-primary" onClick={() => setOpenAuthModal(true)}>
                 Login / Sign Up
               </button>
