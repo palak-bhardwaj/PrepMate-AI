@@ -1,159 +1,182 @@
-import { useContext, useState } from 'react'
-import HERO_IMG from "../assets/hero-img.png";
-import { APP_FEATURES } from "../utils/data";
+import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {LuSparkles} from "react-icons/lu";
+import { LuSparkles } from "react-icons/lu";
+import HERO_IMG from "../assets/hero-img.png";
+import mainImg from "../assets/img_main.png";
+import { APP_FEATURES } from "../utils/data";
 import Modal from '../components/Modal';
 import Login from './Auth/Login';
 import SignUp from './Auth/SignUp';
 import { UserContext } from '../context/userContext';
 import ProfileInfoCard from '../components/Cards/ProfileInfoCard';
 
-
 const LandingPage = () => {
-
-  const {user} = useContext(UserContext);
-
+  const { user } = useContext(UserContext);
   const navigate = useNavigate();
 
   const [openAuthModal, setOpenAuthModal] = useState(false);
   const [currentPage, setCurrentPage] = useState("login");
 
   const handleCTA = () => {
-    if(!user){
+    if (!user) {
       setOpenAuthModal(true);
-    }else{
+    } else {
       navigate("/dashboard");
     }
   };
 
   return (
-
     <>
-
-      <div className='w-full min-h-full bg-[#F7CFD8]'>
-        <div className='w-[500px] h-[500px] bg-[#A53860] blur-[300px] absolute top-0 left-0'/>
-
-        <div className='w-9/10 container mx-auto px-4 pt-6 pb-[200px] relative z-10'>
-          { /* Headers */ }
-          <header className='flex justify-between items-center mb-16'>
-            <div className='text-xl text-black font-bold'>
-              Interview Prep AI
+      {/* Hero Section */}
+      <section
+        className="w-full min-h-[80vh] relative overflow-hidden flex items-center"
+        style={{ background: 'var(--gradient-bg)' }}
+      >
+        <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[var(--color-accent)] blur-[300px] opacity-20 z-0" />
+        <div className="container mx-auto px-6 md:px-12 py-10 relative z-10">
+          <header className="flex justify-between items-center mb-12">
+            <div className="text-2xl font-bold text-[var(--color-text-main)]">
+              Interview PrepMateAI
             </div>
             {user ? (
-              <ProfileInfoCard/>
+              <ProfileInfoCard />
             ) : (
-              <button className='bg-linear-to-r from-[#7D1C4A] to-[#670D2F] text-sm font-semibold text-white px-7 py-2.5 rounded-full hover:bg-black hover:text-white border border-white transition-colors cursor-pointer' onClick={() => setOpenAuthModal(true)}>
+              <button className="btn-primary" onClick={() => setOpenAuthModal(true)}>
                 Login / Sign Up
               </button>
             )}
           </header>
 
-          {/* Hero Content */}
-          <div className='flex flex-col md:flex-row items-center'>
-            <div className='w-full md:w-1/2 pr-4 mb-8 md:mb-0'>
-              <div className='flex items-center justify-left mb-2'>
-                <div className='flex items-center gap-2 text-[13px] text-[#670D2F] font-semibold bg-[#F7CFD8] px-3 py-1 rounded-full border border-[#7D1C4A]'>
+          <div className="flex flex-col md:flex-row items-center gap-10">
+            <div className="w-full md:w-1/2">
+              <div className="flex items-center mb-3">
+                <div
+                  className="flex items-center gap-2 text-xs font-semibold px-4 py-1.5 rounded-full border"
+                  style={{
+                    color: 'var(--color-accent-dark)',
+                    backgroundColor: 'var(--color-bg-main)',
+                    borderColor: 'var(--color-accent)',
+                  }}
+                >
                   <LuSparkles /> AI Powered
                 </div>
               </div>
 
-              <h1 className='text-5xl text-black font-medium mb-6 leading-tight'>
-                Ace Interviews with <br/>
-                <span className='text-transparent bg-clip-text bg-[radial-gradient(circle,_#7D1C4A_0%,_#670D2F_100%)] bg-[length:200%_200%] animate-text-shine font-semibold'>
+              <h1 className="text-4xl sm:text-5xl font-semibold mb-5 leading-snug text-[var(--color-text-main)]">
+                Ace Interviews with <br />
+                <span
+                  className="text-transparent bg-clip-text font-bold animate-text-shine"
+                  style={{
+                    backgroundImage: 'linear-gradient(to right, var(--color-accent), var(--color-accent-dark))',
+                  }}
+                >
                   AI-Powered
                 </span>{" "}
                 Learning
               </h1>
-            </div>
 
-            <div className='w-full md:w-1/2'>
-              <p className='text-[17px] text-gray-900 mr-0 md:mr-20 mb-6'>
+              <p className="text-base sm:text-lg text-[var(--color-text-muted)] mb-6">
                 Get role-specific questions, expand answers when you need them,
                 dive deeper into concepts, and organize everything your way.
-                From preperation to mastery - your ultimate interview toolkit is 
-                here.
               </p>
 
-              <button className='bg-black text-sm font-semibold text-white px-7 py-2.5 rounded-full hover:bg-[#FFEEF4] hover:text-black border border-[#F7CFD8] hover:border-[#670D2F] transition-colors cursor-pointer' onClick={handleCTA}>
-                Get Started
-              </button>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button className="btn-primary" onClick={handleCTA}>
+                  Get Started
+                </button>
+                {!user && (
+                  <button
+                    className="btn-primary"
+                    onClick={() => setOpenAuthModal(true)}
+                    style={{
+                      backgroundImage: 'linear-gradient(to right, #00bcd4, #0097a7)',
+                    }}
+                  >
+                    Login / Sign Up
+                  </button>
+                )}
+              </div>
+            </div>
 
+            <div className="w-full md:w-1/2">
+              <img
+                src={HERO_IMG}
+                alt="Hero"
+                className="w-full rounded-xl shadow-xl"
+              />
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className='w-full min-h-full relative z-10'>
-        <div>
-          <section className='flex items-center justify-center -mt-36'>
-            <img src={HERO_IMG} alt="Hero Image" className='w-[80vw] rounded-lg' />
-          </section>
-        </div>
-
-        <div className='w-full min-h-full bg-[#F7CFD8] mt-10'>
-          <div className='w-9/10 container mx-auto px-4 pt-10 pb-20'>
-            <section className='mt-5'>
-              <h2 className='text-2xl font-medium text-center mb-12'>
-                Features That Make You Shine
-              </h2>
-              <div className='flex flex-col items-center gap-8'>
-                {/* First 3 Cards */}
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-8 w-full'>
-                  {APP_FEATURES.slice(0,3).map((feature) => (
-                    <div
-                      key={feature.id}
-                      className='bg-[#FFEEF4] p-6 rounded-xl shadow-xs hover:shadow-lg shadow-[#670D2F] transition border border-[#670D2F]'
-                    >
-                      <h3 className='text-base font-semibold mb-3'>{feature.title}</h3>
-                      <p className='text-gray-600'>{feature.description}</p>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Remaining 2 cards */}
-
-                <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
-                  {APP_FEATURES.slice(3).map((feature) => (
-                    <div
-                      key={feature.id}
-                      className='bg-[#FFEEF4] p-6 rounded-xl shadow-xs hover:shadow-lg shadow-[#670D2F] transition border border-[#670D2F]'
-                    >
-                      <h3 className='text-base font-semibold mb-3'>{feature.title}</h3>
-                      <p className='text-gray-600'>{feature.description}</p>
-                    </div>
-                  ))}
-                </div>
+      {/* Explore Section */}
+      <section className="w-full py-12 md:py-16" style={{ backgroundColor: 'var(--color-bg-light)' }}>
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="section-header text-[var(--color-footer-text)] text-center mb-10">
+            Explore How It Looks
+          </h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {[...Array(6)].map((_, index) => (
+              <div
+                key={index}
+                className="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition border"
+                style={{ borderColor: 'var(--color-card-border)' }}
+              >
+                <img
+                  src={mainImg}
+                  className="w-full h-60 object-cover"
+                  alt={`Page ${index + 1}`}
+                />
               </div>
-            </section>
+            ))}
           </div>
         </div>
+      </section>
 
-        <div className='text-sm bg-gray-50 text-secondary text-center p-5 mt-5'>
-          Made with ❤️... Happy Coding
+      {/* Features Section */}
+      <section className="w-full py-12 md:py-16" style={{ backgroundColor: 'var(--color-bg-main)' }}>
+        <div className="container mx-auto px-6 md:px-12">
+          <h2 className="section-header text-center text-[var(--color-text-main)] mb-10">
+            Features That Make You Shine
+          </h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {APP_FEATURES.map((feature) => (
+              <div key={feature.id} className="card">
+                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                <p className="text-[var(--color-text-muted)]">{feature.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
 
+      {/* Footer */}
+      <footer
+        className="text-sm text-center py-5"
+        style={{
+          backgroundColor: 'var(--color-footer-bg)',
+          color: 'var(--color-footer-text)',
+        }}
+      >
+        Made by @palak.
+      </footer>
 
+      {/* Auth Modal */}
       <Modal
-        isOpen = {openAuthModal}
-        onClose = {() => {
+        isOpen={openAuthModal}
+        onClose={() => {
           setOpenAuthModal(false);
           setCurrentPage("login");
         }}
         hideHeader
       >
         <div>
-          {currentPage === "login" && (
-            <Login setCurrentPage={setCurrentPage} />
-          )}
-          {currentPage === "signup" && (
-            <SignUp setCurrentPage={setCurrentPage} />
-          )}
+          {currentPage === "login" && <Login setCurrentPage={setCurrentPage} />}
+          {currentPage === "signup" && <SignUp setCurrentPage={setCurrentPage} />}
         </div>
       </Modal>
     </>
   );
 };
 
-export default LandingPage
+export default LandingPage;

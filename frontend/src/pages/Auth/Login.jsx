@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Input from '../../components/Inputs/Input';
 import { validateEmail } from '../../utils/helper';
@@ -6,98 +6,82 @@ import axiosInstance from '../../utils/axiosInstance';
 import { API_PATHS } from '../../utils/apiPaths';
 import { UserContext } from '../../context/userContext';
 
-const Login = ({setCurrentPage}) => {
+const Login = ({ setCurrentPage }) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [errors, setErrors] = useState({});
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState(null);
-
-  const {updateUser} = useContext(UserContext);
+  const { updateUser } = useContext(UserContext);
   const navigate = useNavigate();
-  
-  // Handle Login Form Submit
+
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    if(!validateEmail(email)){
-      setError("Please enter a valid email address.");
-      return;
-    }
+    const newErrors = {};
+    if (!validateEmail(email)) newErrors.email = 'Please enter a valid email address.';
+    if (!password) newErrors.password = 'Please enter the password.';
 
-    if(!password){
-      setError("Please enter the password");
-      return;
-    }
+    setErrors(newErrors);
+    if (Object.keys(newErrors).length > 0) return;
 
-    setError("");
-
-    // Login API Call
-    try{
-      const response = await axiosInstance.post(API_PATHS.AUTH.LOGIN, {
-        email,
-        password,
-      });
-
+    try {
+      const response = await axiosInstance.post(API_PATHS.AUTH.LOGIN, { email, password });
       const { token } = response.data;
 
-      if(token){
-        localStorage.setItem("token", token);
+      if (token) {
+        localStorage.setItem('token', token);
         updateUser(response.data);
-        navigate("/dashboard");
+        navigate('/dashboard');
       }
-
-    } catch (error){
-      if(error.response && error.response.data.message){
-        setError(error.response.data.message);
-      } 
-      else{
-        setError("Something went wrong. Please try again.");
-      }
+    } catch (error) {
+      setErrors({ general: error.response?.data?.message || 'Something went wrong. Please try again.' });
     }
   };
 
   return (
-    <div className='w-[90vw] md:w-[33vw] p-7 flex flex-col justify-center'>
-      <h3 className='text-lg font-semibold text-black'>Welcome Back</h3>
-      <p className='text-xs text-slate-700 mt-[5px] mb-6'>
-        Please enter your details to log in
-      </p>
+    <div className="w-[90vw] md:w-[33vw] p-8 border border-[#c6e6ea] rounded-2xl bg-white shadow-xl">
+      <h3 className="text-xl font-bold text-textMain mb-1">Welcome Back</h3>
+      <p className="text-sm text-mutedText mb-6">Please enter your details to log in.</p>
 
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleLogin} className="flex flex-col gap-4">
         <Input
-          value = {email}
-          onChange = {({target}) => setEmail(target.value)}
-          label = "Email Address"
-          placeholder = "john@example.com"
-          type = "text"
+          value={email}
+          onChange={({ target }) => setEmail(target.value)}
+          label="Email Address"
+          placeholder="john@example.com"
+          type="email"
+          error={errors.email}
+          
         />
 
         <Input
-          value = {password}
-          onChange = {({target}) => setPassword(target.value)}
-          label = "Password"
-          placeholder = "Min 8 Characters"
-          type = "password"
+          value={password}
+          onChange={({ target }) => setPassword(target.value)}
+          label="Password"
+          placeholder="Min 8 Characters"
+          type="password"
+          error={errors.password}
         />
 
-        {error && <p className='text-red-500 text-xs pb-2.5'>{error}</p>}
+        {errors.general && <p className="text-red-500 text-xs">{errors.general}</p>}
 
-        <button type='submit' className='btn-primary'>LOGIN</button>
-        <p className='text-[13px] text-slate-800 mt-3'>Don't have an account?{" "}
+        <button type="submit" className="btn-primary w-52 self-center">
+          LOGIN
+        </button>
+
+        <p className="text-sm text-mutedText text-center">
+          Don’t have an account?
           <button
-            className='font-medium text-[#670D2F] underline cursor-pointer'
-            onClick={() => {
-              setCurrentPage("signup");
-            }}
+            type="button"
+            className="text-accent font-medium underline ml-1"
+            onClick={() => setCurrentPage('signup')}
           >
-            SignUp
+            Sign up
           </button>
         </p>
-
-
       </form>
     </div>
-  )
+  );
 };
 
-export default Login
+export default Login;
