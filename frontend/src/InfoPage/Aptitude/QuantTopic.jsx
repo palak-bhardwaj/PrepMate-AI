@@ -2,7 +2,7 @@ import React from 'react';
 
 const QuantTopic = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
+    <div className="bg-gradient-to-b from-[#fafdff] to-[#f0f6ff] max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
       <h1 className="text-4xl font-bold mb-4 text-[var(--color-accent-dark)]">Quantitative Aptitude</h1>
       <p className="mb-6 text-lg text-[var(--color-text-muted)]">
         Quantitative Aptitude tests your numerical ability and mathematical reasoning. It is crucial for cracking competitive exams and placement tests.

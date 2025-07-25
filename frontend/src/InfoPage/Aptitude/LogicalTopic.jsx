@@ -2,7 +2,7 @@ import React from 'react';
 
 const LogicalTopic = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
+    <div className="bg-gradient-to-b from-[#fafdff] to-[#f0f6ff] max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
       <h1 className="text-4xl font-bold mb-4 text-[var(--color-accent-dark)]">Logical Reasoning</h1>
       <p className="mb-6 text-lg text-[var(--color-text-muted)]">
         Logical Reasoning evaluates your ability to think critically and solve pattern-based problems. It's an essential part of aptitude assessments.

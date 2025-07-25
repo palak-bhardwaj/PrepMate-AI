@@ -2,7 +2,7 @@ import React from 'react';
 
 const PythonTopic = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
+    <div className="bg-gradient-to-b from-[#fafdff] to-[#f0f6ff] max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
       <h1 className="text-4xl font-bold mb-4 text-[var(--color-accent-dark)]">Python Programming</h1>
       <p className="mb-6 text-lg text-[var(--color-text-muted)]">
         Python is a high-level, interpreted language known for its readability and vast ecosystem. It's used in web development, data science, automation, scripting, AI, and more.

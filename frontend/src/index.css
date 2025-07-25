@@ -1,22 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;700&display=swap');
 @import "tailwindcss";
 
-
 :root {
-  --color-bg-main: #e8fefe;
-  --color-bg-light: #e6f7fa;
-  --color-accent: #26c6da;
-  --color-accent-dark: #007c91;
-  --color-text-main: #102a2c;
-  --color-text-muted: #446b6d;
-  --color-button-bg: #26c6da;
-  --color-button-border: #007c91;
+  --color-bg-main: #fdf4ff;                  /* Soft lilac */
+  --color-bg-light: #fae8ff;                 /* Light pinkish-purple */
+
+  --color-accent: #d946ef;                   /* Vibrant magenta */
+  --color-accent-dark: #9333ea;              /* Deep purple */
+
+  --color-text-main: #2e1065;                /* Dark purple */
+  --color-text-muted: #7e22ce;               /* Muted purple */
+
+  --color-button-bg: #d946ef;
+  --color-button-border: #9333ea;
+
   --color-card-bg: #ffffff;
-  --color-card-border: #b0dfe5;
-  --color-footer-bg: #e8fefe;
-  --color-footer-text: #13383a;
-  --color-card-header-bg: #c4f5fc;
-  --gradient-bg: linear-gradient(135deg, #e8fefe 0%, #e6f7fa 100%);
+  --color-card-border: #f3d9fa;
+
+  --color-footer-bg: #fdf4ff;
+  --color-footer-text: #3b0764;
+
+  --color-card-header-bg: #fce7f3;
+
+  --gradient-bg: linear-gradient(135deg, #fdf4ff 0%, #fae8ff 100%);
 }
 
 html {
@@ -56,15 +62,15 @@ body {
 @layer components {
   .btn-primary {
     @apply px-6 py-2.5 rounded-full font-semibold transition shadow-md hover:opacity-90;
-    background-image: linear-gradient(to right, #26c6da, #00acc1);
+    background-image: linear-gradient(to right, #d946ef, #9333ea);
     border: 1px solid var(--color-button-border);
     color: white;
-    box-shadow: 0 4px 14px rgba(0, 172, 193, 0.3);
+    box-shadow: 0 4px 14px rgba(147, 51, 234, 0.3);
   }
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(0, 172, 193, 0.35);
+    box-shadow: 0 6px 18px rgba(147, 51, 234, 0.35);
   }
 
   .section-header {
@@ -89,6 +95,7 @@ body {
     border-color: var(--color-card-border);
   }
 }
+
 @keyframes blob {
   0%, 100% {
     transform: scale(1) translate(0, 0);

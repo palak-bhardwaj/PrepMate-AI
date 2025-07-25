@@ -2,7 +2,7 @@ import React from 'react';
 
 const OOPConcepts = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
+    <div className="bg-gradient-to-b from-[#fafdff] to-[#f0f6ff] max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
       <h1 className="text-4xl font-bold mb-4 text-[var(--color-accent-dark)]">Object-Oriented Programming (OOP)</h1>
       <p className="mb-6 text-lg text-[var(--color-text-muted)]">
         OOP is a programming paradigm based on the concept of "objects", which can contain data and methods.

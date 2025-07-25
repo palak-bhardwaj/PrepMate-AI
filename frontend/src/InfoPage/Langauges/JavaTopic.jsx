@@ -2,7 +2,7 @@ import React from 'react';
 
 const JavaTopic = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
+    <div className="bg-gradient-to-b from-[#fafdff] to-[#f0f6ff] max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
       <h1 className="text-4xl font-bold mb-4 text-[var(--color-accent-dark)]">Java Programming</h1>
       <p className="mb-6 text-lg text-[var(--color-text-muted)]">
         Java is a class-based, object-oriented programming language known for its platform independence via the Java Virtual Machine (JVM). It's widely used in web, Android, enterprise, and backend development.

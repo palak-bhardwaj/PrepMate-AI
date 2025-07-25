@@ -2,7 +2,7 @@ import React from 'react';
 
 const DSATopic = () => {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
+    <div className="bg-gradient-to-b from-[#fafdff] to-[#f0f6ff] max-w-6xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
       <h1 className="text-4xl font-bold mb-6 text-[var(--color-accent-dark)]">Data Structures & Algorithms (DSA)</h1>
 
       <p className="mb-6 text-lg text-[var(--color-text-muted)]">

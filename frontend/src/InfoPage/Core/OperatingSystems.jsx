@@ -2,7 +2,7 @@ import React from 'react';
 
 const OperatingSystems = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
+    <div className="bg-gradient-to-b from-[#fafdff] to-[#f0f6ff] max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
       <h1 className="text-4xl font-bold mb-4 text-[var(--color-accent-dark)]">Operating System (OS)</h1>
       <p className="mb-6 text-lg text-[var(--color-text-muted)]">
         An Operating System is system software that manages hardware, software resources, and provides common services for computer programs.

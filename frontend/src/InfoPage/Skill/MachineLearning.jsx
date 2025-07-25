@@ -2,7 +2,7 @@ import React from 'react';
 
 const MachineLearning = () => {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
+    <div className="bg-gradient-to-b from-[#fafdff] to-[#f0f6ff] max-w-5xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
       <h1 className="text-4xl font-bold mb-4 text-[var(--color-accent-dark)]">Machine Learning (AI/ML)</h1>
       <p className="mb-6 text-lg text-[var(--color-text-muted)]">
         Machine Learning enables systems to learn from data and make predictions or decisions without being explicitly programmed.
