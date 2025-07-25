@@ -1,36 +1,69 @@
-import React from 'react';
+
 import { PREP_TOPICS } from '../../utils/prepTopics';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const PrepTopicsGrid = ({ onTopicSelect }) => {
+  const grouped = PREP_TOPICS.reduce((acc, item) => {
+    acc[item.category] = [...(acc[item.category] || []), item];
+    return acc;
+  }, {});
+
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
-      {PREP_TOPICS.map((topic) => (
-        <div
-          key={topic.id}
-          onClick={() => onTopicSelect(topic)}
-          className="bg-white border border-[var(--color-card-border)] rounded-2xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 cursor-pointer"
-        >
-          {/* Title */}
-          <h3 className="text-lg font-semibold text-[var(--color-accent-dark)] mb-2">
-            {topic.title}
-          </h3>
+    <div className="space-y-12">
+      {Object.entries(grouped).map(([category, topics]) => (
+        <div key={category}>
+          <h2 className="text-xl font-semibold mb-4 text-[var(--color-text-main)] px-2">
+            {category}
+          </h2>
 
-          {/* Description */}
-          <p className="text-sm text-[var(--color-text-muted)] leading-relaxed mb-3">
-            {topic.description}
-          </p>
+          <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={20}
+            slidesPerView={1.1}
+            navigation
+            pagination={{ clickable: true }}
+            breakpoints={{
+              640: { slidesPerView: 1.2 },
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+              1280: { slidesPerView: 4 },
+            }}
+          >
+            {topics.map((topic) => (
+              <SwiperSlide key={topic.id}>
+                <div
+                  onClick={() => onTopicSelect(topic)}
+                  className="h-full min-h-[320px] flex flex-col justify-between bg-white border border-[var(--color-card-border)] rounded-2xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 cursor-pointer"
+                >
+                  {/* Title & Description */}
+                  <div>
+                    <h3 className="text-lg font-semibold text-[var(--color-accent-dark)] mb-2">
+                      {topic.title}
+                    </h3>
+                    <p className="text-sm text-[var(--color-text-muted)] leading-relaxed mb-3 line-clamp-4">
+                      {topic.description}
+                    </p>
+                  </div>
 
-          {/* Tags */}
-          <div className="flex flex-wrap gap-2">
-            {topic.tags.map((tag, index) => (
-              <span
-                key={index}
-                className="text-[11px] bg-[var(--color-bg-light)] text-[var(--color-text-main)] px-2 py-1 rounded-full border border-[var(--color-accent-dark)]"
-              >
-                {tag}
-              </span>
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {topic.tags.map((tag, index) => (
+                      <span
+                        key={index}
+                        className="text-[11px] bg-[var(--color-bg-light)] text-[var(--color-text-main)] px-2 py-1 rounded-full border border-[var(--color-accent-dark)]"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
         </div>
       ))}
     </div>
