@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../context/userContext';
 import { LuPlus } from 'react-icons/lu';
+import { FaPlay } from 'react-icons/fa'; // for start icon
 
 const Navbar = ({ onAddSession }) => {
   const { user, clearUser } = useContext(UserContext);
@@ -11,6 +12,10 @@ const Navbar = ({ onAddSession }) => {
     localStorage.clear();
     clearUser();
     navigate('/');
+  };
+
+  const startInterview = () => {
+    navigate('/interview?role=frontend'); // hardcoded for now
   };
 
   return (
@@ -24,25 +29,44 @@ const Navbar = ({ onAddSession }) => {
 
         {user && (
           <div className="flex items-center gap-2">
-            {/* Add New Button */}
+            {/* Add Session Button */}
             {onAddSession && (
-              <button
-                onClick={onAddSession}
-                className="hidden sm:flex items-center gap-2 px-4 py-1.5 text-sm font-medium text-white bg-[var(--color-accent-dark)] hover:bg-[var(--color-accent)] rounded-full transition"
-              >
-                <LuPlus className="text-lg" />
-                Add Session
-              </button>
+              <>
+                <button
+                  onClick={onAddSession}
+                  className="hidden sm:flex items-center gap-2 px-4 py-1.5 text-sm font-medium text-white bg-[var(--color-accent-dark)] hover:bg-[var(--color-accent)] rounded-full transition"
+                >
+                  <LuPlus className="text-lg" />
+                  Add Session
+                </button>
+
+                <button
+                  onClick={onAddSession}
+                  className="sm:hidden p-2 rounded-full bg-[var(--color-accent-dark)] text-white hover:bg-[var(--color-accent)]"
+                >
+                  <LuPlus className="text-lg" />
+                </button>
+              </>
             )}
-            {/* Mobile version (icon only) */}
-            {onAddSession && (
-              <button
-                onClick={onAddSession}
-                className="sm:hidden p-2 rounded-full bg-[var(--color-accent-dark)] text-white hover:bg-[var(--color-accent)]"
-              >
-                <LuPlus className="text-lg" />
-              </button>
-            )}
+
+            {/* Start Interview Button */}
+            <button
+              onClick={startInterview}
+              className="hidden sm:flex items-center gap-2 px-4 py-1.5 text-sm font-medium text-white bg-green-600 hover:bg-green-700 rounded-full transition"
+            >
+              <FaPlay className="text-sm" />
+              Start Interview
+            </button>
+
+            {/* Mobile version */}
+            <button
+              onClick={startInterview}
+              className="sm:hidden p-2 rounded-full bg-green-600 text-white hover:bg-green-700"
+            >
+              <FaPlay className="text-sm" />
+            </button>
+
+            {/* Logout */}
             <button onClick={handleLogout} className="btn-primary px-4 py-1.5 text-sm">
               Logout
             </button>

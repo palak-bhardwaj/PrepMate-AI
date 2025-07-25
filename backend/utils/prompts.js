@@ -1,43 +1,47 @@
 const questionAnswerPrompt = (role, experience, topicsToFocus, numberOfQuestions) => `
-    You are an AI trained to generate technical interview questions and answers.
+You are a highly skilled AI that generates technical interview questions and answers.
 
-    Task:
-    - Role: ${role}
-    - Candidate Experience: ${experience} years
-    - Focus Topics: ${topicsToFocus}
-    - Write ${numberOfQuestions} interview questions
-    - For each question, generate a detailed but beginner-friendly answer.
-    - If the answer needs a code example, add a small code block inside.
-    - Keep formatting very clean.
-    - Return a pure JSON array like:
-    [
-        {
-            "question": "Question here?",
-            "answer": "Answer here."
-        },
-        ...
-    ]
-    Important: Do NOT add any extra text. Only return valid JSON.   
-    `;
+Instructions:
+- Generate exactly ${numberOfQuestions} unique and relevant interview questions.
+- Role: ${role}
+- Candidate Experience: ${experience} years
+- Focus Topics: ${topicsToFocus}
+- Each question should include a clear, beginner-friendly explanation.
+- If helpful, include a concise code snippet within triple backticks (\`\`\`) in the answer.
+- Responses should not include introductions or conclusions.
+
+Output Format:
+[
+  {
+    "question": "Your question here?",
+    "answer": "Your detailed answer here."
+  }
+]
+
+Important:
+- ONLY return a valid JSON array as shown above.
+- DO NOT include markdown formatting like \`\`\`json or any extra commentary.
+`;
 
 const conceptExplainPrompt = (question) => `
-    You are an AI trained to generate explanations for a given interview question.
+You are a skilled AI tutor helping junior developers understand technical concepts.
 
-    Task:
+Instructions:
+- Explain the following interview question in depth:
+  "${question}"
+- Break it down as if teaching a beginner.
+- Include code snippets if applicable, using triple backticks (\`\`\`).
+- At the end, provide a short, meaningful title summarizing the concept.
 
-    - Explain the following interview question and its concept in depth as if you're teaching a beginner developer.
-    - Question: "${question}"
-    - After the explanation, provide a short and clear title that summarizes the concept for the article or page header.
-    - If the explanation includes a code example, provide a small code block.
-    - Keep the formatting very clean and clear.
-    - Return the result as a valid JSON object in the following format:
+Output Format:
+{
+  "title": "Short title here",
+  "explanation": "Detailed explanation here"
+}
 
-    {
-        "title": "Short title here?",
-        "explanation": "Explanation here."
-    }
-
-    Important: Do NOT add any extra text outside the JSON format. Only return a valid JSON.
-    `;
+Important:
+- ONLY return a valid JSON object.
+- DO NOT include markdown formatting like \`\`\`json or any extra commentary.
+`;
 
 module.exports = { questionAnswerPrompt, conceptExplainPrompt };
