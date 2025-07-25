@@ -1,6 +1,7 @@
-import { useContext, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LuSparkles } from "react-icons/lu";
+
 import HERO_IMG from "../assets/hero-img.png";
 import mainImg from "../assets/img_main.png";
 import { APP_FEATURES } from "../utils/data";
@@ -10,11 +11,16 @@ import SignUp from './Auth/SignUp';
 import { UserContext } from '../context/userContext';
 
 const LandingPage = () => {
-  const { user } = useContext(UserContext);
+  const { user, clearUser } = useContext(UserContext); // ✅ get clearUser
   const navigate = useNavigate();
 
   const [openAuthModal, setOpenAuthModal] = useState(false);
   const [currentPage, setCurrentPage] = useState("login");
+
+  // ✅ Clear user when landing page mounts
+  useEffect(() => {
+    clearUser();
+  }, []);
 
   const handleCTA = () => {
     if (!user) {

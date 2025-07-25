@@ -89,3 +89,20 @@ body {
     border-color: var(--color-card-border);
   }
 }
+@keyframes blob {
+  0%, 100% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.1) translate(20px, -10px);
+  }
+}
+.animate-blob1 {
+  animation: blob 7s infinite ease-in-out;
+}
+.animate-blob2 {
+  animation: blob 9s infinite ease-in-out;
+}
+.animate-blob3 {
+  animation: blob 6s infinite ease-in-out;
+}
