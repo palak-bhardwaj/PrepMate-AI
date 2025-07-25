@@ -1,12 +1,16 @@
-
+import React from 'react';
 import { PREP_TOPICS } from '../../utils/prepTopics';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+import { useNavigate } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const PrepTopicsGrid = ({ onTopicSelect }) => {
+const PrepTopicsGrid = () => {
+  const navigate = useNavigate();
+
+  // Group topics by category
   const grouped = PREP_TOPICS.reduce((acc, item) => {
     acc[item.category] = [...(acc[item.category] || []), item];
     return acc;
@@ -36,7 +40,7 @@ const PrepTopicsGrid = ({ onTopicSelect }) => {
             {topics.map((topic) => (
               <SwiperSlide key={topic.id}>
                 <div
-                  onClick={() => onTopicSelect(topic)}
+                  onClick={() => navigate(`/topics/${topic.id}`)}
                   className="h-full min-h-[320px] flex flex-col justify-between bg-white border border-[var(--color-card-border)] rounded-2xl p-5 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-200 cursor-pointer"
                 >
                   {/* Title & Description */}

@@ -77,11 +77,7 @@ const Dashboard = () => {
           <h2 className="text-xl font-semibold mb-4 text-[var(--color-text-main)]">
             Explore Important Topics for Placements
           </h2>
-          <PrepTopicsGrid
-            onTopicSelect={(topic) => {
-              toast.success(`Explore: ${topic.title}`);
-            }}
-          />
+          <PrepTopicsGrid />
         </div>
       </div>
 
