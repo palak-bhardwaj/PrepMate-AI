@@ -1,6 +1,6 @@
 const CIntroduction = () => {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12 text-gray-800 dark:text-gray-200">
+    <div className="card max-w-6xl mx-auto px-6 py-12 text-gray-800 dark:text-gray-200">
       <h1 className="text-4xl font-extrabold text-purple-700 mb-6 border-b-4 border-purple-300 pb-2">
         🔰 Introduction to C Programming
       </h1>

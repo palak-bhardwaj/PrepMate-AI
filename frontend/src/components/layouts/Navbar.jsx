@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../context/userContext';
 import { LuPlus } from 'react-icons/lu';
-import { FaPlay } from 'react-icons/fa'; // for start icon
+import { FaPlay } from 'react-icons/fa';
 
 const Navbar = ({ onAddSession }) => {
   const { user, clearUser } = useContext(UserContext);
@@ -15,7 +15,7 @@ const Navbar = ({ onAddSession }) => {
   };
 
   const startInterview = () => {
-    navigate('/interview?role=frontend'); // hardcoded for now
+    navigate('/interview-instructions');
   };
 
   return (
@@ -39,7 +39,6 @@ const Navbar = ({ onAddSession }) => {
                   <LuPlus className="text-lg" />
                   Add Session
                 </button>
-
                 <button
                   onClick={onAddSession}
                   className="sm:hidden p-2 rounded-full bg-[var(--color-accent-dark)] text-white hover:bg-[var(--color-accent)]"
@@ -57,8 +56,6 @@ const Navbar = ({ onAddSession }) => {
               <FaPlay className="text-sm" />
               Start Interview
             </button>
-
-            {/* Mobile version */}
             <button
               onClick={startInterview}
               className="sm:hidden p-2 rounded-full bg-green-600 text-white hover:bg-green-700"

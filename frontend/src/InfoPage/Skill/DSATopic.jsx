@@ -1,110 +1,143 @@
-import React from 'react';
+import React from "react";
 
-const DSATopic = () => {
+const DSA = () => {
   return (
-    <div className="bg-gradient-to-b from-[#fafdff] to-[#f0f6ff] max-w-6xl mx-auto px-4 py-10 text-[var(--color-text-main)]">
-      <h1 className="text-4xl font-bold mb-6 text-[var(--color-accent-dark)]">Data Structures & Algorithms (DSA)</h1>
+    <div className="px-6 py-12 max-w-6xl mx-auto">
+      <h1 className="text-4xl font-bold text-purple-700 mb-8 text-center">📚 Data Structures & Algorithms (DSA)</h1>
 
-      <p className="mb-6 text-lg text-[var(--color-text-muted)]">
-        DSA is the foundation of efficient problem-solving and coding. It helps in organizing data, optimizing code, and is crucial for cracking coding interviews and building scalable applications.
-      </p>
+      {/* What is DSA */}
+      <div className="bg-white dark:bg-[#1f1f2b] shadow-xl rounded-2xl p-6 mb-8">
+        <h2 className="text-2xl font-semibold text-purple-600 mb-4">🔰 What is DSA?</h2>
+        <p className="text-lg">
+          DSA stands for <strong>Data Structures and Algorithms</strong>. It is the foundation of efficient programming and problem-solving. Data Structures deal with how data is stored and organized, while Algorithms define a step-by-step method to solve a problem.
+        </p>
+      </div>
 
-      {/* Key Concepts */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">📘 Key Concepts</h2>
-        <ul className="list-disc pl-5 space-y-2">
-          <li><strong>Data Structures:</strong> Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Hash Tables</li>
-          <li><strong>Algorithms:</strong> Searching, Sorting, Recursion, Backtracking, Dynamic Programming</li>
-          <li><strong>Complexity Analysis:</strong> Time & Space complexity, Big-O Notation</li>
-          <li><strong>Problem Solving:</strong> Pattern recognition, breaking down problems, edge cases</li>
+      {/* Types of Data Structures */}
+      <div className="bg-white dark:bg-[#1f1f2b] shadow-xl rounded-2xl p-6 mb-8">
+        <h2 className="text-2xl font-semibold text-purple-600 mb-4">📦 Types of Data Structures</h2>
+        <ul className="list-disc list-inside text-lg space-y-1">
+          <li>Arrays and Strings</li>
+          <li>Linked Lists (Singly, Doubly, Circular)</li>
+          <li>Stacks and Queues</li>
+          <li>Trees (Binary Trees, BST, AVL, Heaps)</li>
+          <li>Graphs (Adjacency Matrix/List, BFS, DFS)</li>
+          <li>Hash Tables and Hashing</li>
+          <li>Tries, Disjoint Sets, Segment Trees</li>
         </ul>
-      </section>
+      </div>
 
-      {/* Common Data Structures */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">🧱 Common Data Structures</h2>
-        <ul className="list-disc pl-5 space-y-2">
-          <li><strong>Array:</strong> Fixed size, direct index access, basic foundation</li>
-          <li><strong>Linked List:</strong> Dynamic size, great for insert/delete, types: singly/doubly</li>
-          <li><strong>Stack:</strong> LIFO structure, used in undo features, recursion</li>
-          <li><strong>Queue:</strong> FIFO structure, used in scheduling, BFS</li>
-          <li><strong>Hash Table:</strong> Key-value storage with average O(1) lookup</li>
-          <li><strong>Tree:</strong> Hierarchical data (Binary, BST, AVL, Segment Trees)</li>
-          <li><strong>Graph:</strong> Used in networks, paths, connected components</li>
+      {/* Algorithms */}
+      <div className="bg-white dark:bg-[#1f1f2b] shadow-xl rounded-2xl p-6 mb-8">
+        <h2 className="text-2xl font-semibold text-purple-600 mb-4">⚙️ Types of Algorithms</h2>
+        <ul className="list-disc list-inside text-lg space-y-1">
+          <li>Searching (Linear, Binary)</li>
+          <li>Sorting (Bubble, Merge, Quick, Heap)</li>
+          <li>Recursion & Backtracking</li>
+          <li>Greedy Algorithms</li>
+          <li>Dynamic Programming</li>
+          <li>Divide and Conquer</li>
+          <li>Graph Algorithms (Dijkstra, Floyd-Warshall, MST)</li>
         </ul>
-      </section>
+      </div>
 
-      {/* Common Algorithms */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">⚙️ Important Algorithms</h2>
-        <ul className="list-disc pl-5 space-y-2">
-          <li><strong>Searching:</strong> Linear, Binary Search</li>
-          <li><strong>Sorting:</strong> Bubble, Selection, Insertion, Merge, Quick, Heap Sort</li>
-          <li><strong>Recursion:</strong> Factorial, Fibonacci, Backtracking (N-Queens, Sudoku)</li>
-          <li><strong>Dynamic Programming:</strong> Memoization, Tabulation, Longest Common Subsequence, Knapsack</li>
-          <li><strong>Greedy Algorithms:</strong> Activity Selection, Huffman Encoding</li>
-          <li><strong>Graph Algorithms:</strong> BFS, DFS, Dijkstra’s, Kruskal’s, Prim’s</li>
-        </ul>
-      </section>
-
-      {/* Sample Problem */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">💡 Sample Code: Binary Search</h2>
-        <pre className="bg-gray-100 text-sm p-4 rounded-md overflow-x-auto">
+      {/* Code Examples */}
+      <div className="bg-white dark:bg-[#1f1f2b] shadow-xl rounded-2xl p-6 mb-8">
+        <h2 className="text-2xl font-semibold text-purple-600 mb-4">💻 Sample Code: Binary Search</h2>
+        <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-md overflow-x-auto text-sm">
 {`// Binary Search in C++
-int binarySearch(int arr[], int n, int target) {
-  int low = 0, high = n - 1;
-  while (low <= high) {
-    int mid = low + (high - low) / 2;
-    if (arr[mid] == target) return mid;
-    else if (arr[mid] < target) low = mid + 1;
-    else high = mid - 1;
-  }
-  return -1; // Not found
+int binarySearch(int arr[], int n, int key) {
+    int low = 0, high = n - 1;
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+        if (arr[mid] == key) return mid;
+        else if (arr[mid] < key) low = mid + 1;
+        else high = mid - 1;
+    }
+    return -1;
 }`}
         </pre>
-      </section>
+      </div>
 
-      {/* Interview Questions */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">🧠 Popular Interview Questions</h2>
-        <ul className="list-decimal pl-5 space-y-2">
-          <li>Reverse a linked list</li>
-          <li>Check if a string is a palindrome using stack</li>
-          <li>Find the majority element in an array (Moore’s Voting)</li>
-          <li>Implement LRU Cache using LinkedHashMap</li>
-          <li>Detect cycle in a graph (DFS/Union-Find)</li>
-          <li>Find Kth largest element using Heap</li>
-        </ul>
-      </section>
+      {/* Practice Questions */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div className="bg-white dark:bg-[#1f1f2b] p-6 rounded-2xl shadow-xl">
+          <h3 className="text-xl font-semibold text-purple-500 mb-2">📝 Practice Questions</h3>
+          <ul className="list-disc list-inside space-y-1 text-lg">
+            <li>Two Sum / Pair with Target Sum</li>
+            <li>Longest Substring Without Repeating</li>
+            <li>Merge Intervals</li>
+            <li>Detect Cycle in a Linked List</li>
+            <li>Maximum Subarray (Kadane’s Algo)</li>
+            <li>Top K Frequent Elements</li>
+          </ul>
+        </div>
+        <div className="bg-white dark:bg-[#1f1f2b] p-6 rounded-2xl shadow-xl">
+          <h3 className="text-xl font-semibold text-purple-500 mb-2">💡 Tips & Tricks</h3>
+          <ul className="list-disc list-inside space-y-1 text-lg">
+            <li>Always analyze time & space complexity.</li>
+            <li>Practice writing code without IDEs.</li>
+            <li>Use dry run and visualizations for recursion & trees.</li>
+            <li>For DP problems, memorize base cases clearly.</li>
+            <li>Graph traversal = BFS/DFS first approach.</li>
+          </ul>
+        </div>
+      </div>
 
-      {/* Learning Resources */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-semibold mb-3">📚 Learning Resources</h2>
-        <ul className="list-disc pl-5 space-y-2">
-          <li><a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">LeetCode</a> – Practice problems with company tags</li>
-          <li><a href="https://www.geeksforgeeks.org/data-structures/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">GeeksForGeeks</a> – Topic-wise DSA guide</li>
-          <li><a href="https://www.codingninjas.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">Coding Ninjas</a> – DSA courses and mentorship</li>
-          <li><a href="https://visualgo.net/en" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">VisuAlgo</a> – Visual explanations of DSA</li>
-        </ul>
-      </section>
+      {/* Interview Prep Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        {[
+          {
+            title: "📌 Must-Know Concepts",
+            content: [
+              "Time & Space Complexity",
+              "Recursion and Stack Memory",
+              "Hashing Techniques",
+              "Sliding Window, Two Pointers",
+              "Prefix Sums, Binary Lifting",
+            ]
+          },
+          {
+            title: "🧠 Advanced Topics",
+            content: [
+              "Segment Trees & Fenwick Tree",
+              "Disjoint Set Union (DSU)",
+              "Topological Sorting",
+              "Shortest Path (Dijkstra, Bellman-Ford)",
+              "Minimax & Alpha-Beta Pruning"
+            ]
+          },
+          {
+            title: "🎯 Interview Tips",
+            content: [
+              "Start with brute force, then optimize.",
+              "Clarify edge cases with interviewer.",
+              "Write clean, modular code.",
+              "Explain logic out loud while coding.",
+              "Use meaningful variable names."
+            ]
+          }
+        ].map((card, index) => (
+          <div key={index} className="bg-white dark:bg-[#1f1f2b] p-5 rounded-2xl shadow-md">
+            <h4 className="text-xl font-semibold text-purple-600 mb-3">{card.title}</h4>
+            <ul className="list-disc list-inside space-y-1 text-lg">
+              {card.content.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
 
-      {/* Tips */}
-      <section className="mb-6">
-        <h2 className="text-2xl font-semibold mb-3">🎯 Tips to Master DSA</h2>
-        <ul className="list-disc pl-5 space-y-2">
-          <li>Start with understanding time/space complexity</li>
-          <li>Solve problems in increasing difficulty (easy → hard)</li>
-          <li>Learn standard templates for recursion, DFS, DP, etc.</li>
-          <li>Join contests (e.g., LeetCode Weekly, Codeforces)</li>
-        </ul>
-      </section>
-
-      <p className="text-center mt-12 text-[var(--color-accent-dark)] font-semibold">
-        💪 Practice consistently. Think in patterns. Trust the process.
-      </p>
+      {/* Conclusion */}
+      <div className="bg-white dark:bg-[#1f1f2b] p-6 rounded-2xl shadow-xl">
+        <h2 className="text-2xl font-semibold text-purple-600 mb-4">✅ Conclusion</h2>
+        <p className="text-lg leading-relaxed">
+          Mastering DSA is essential for excelling in technical interviews and competitive programming. It builds the foundation for writing efficient, optimized code to solve real-world problems. Stay consistent with practice, understand problem patterns, and gradually explore advanced topics.
+        </p>
+      </div>
     </div>
   );
 };
 
-export default DSATopic;
+export default DSA;

@@ -68,7 +68,7 @@ export const PREP_TOPICS = [
   {
     id: 'cloudcomputing',
     category: 'Professional Skill Tracks',
-    title: 'Cloud Computing',
+    title: 'DevOps',
     description: 'Deploy, manage, and scale apps using cloud platforms like AWS, Azure, and GCP.',
     tags: ['AWS', 'Azure', 'GCP', 'IAM', 'S3', 'Lambda', 'Kubernetes', 'CI/CD', 'Cloud Architecture'],
   },
