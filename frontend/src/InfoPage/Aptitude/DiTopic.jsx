@@ -141,17 +141,17 @@ const DiTopic = () => {
         </section>
     
         <section className="card  mb-12">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">📊 Data Interpretation: Pie Charts</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">📊 Data Interpretation: Pie Charts</h2>
         <p className="text-lg leading-relaxed mb-4">
             A <strong>Pie Chart</strong> is a circular chart divided into sectors where each sector represents a proportion of the whole. It is commonly used to depict percentage distributions.
         </p>
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">💡 Tips:</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">💡 Tips:</h3>
         <ul className="list-disc list-inside mb-4 text-lg">
             <li>Total value represented by the pie chart is always 360°.</li>
             <li>To find value represented by a sector: <code>(Sector Angle / 360) × Total Value</code></li>
             <li>To find sector angle for a value: <code>(Value / Total Value) × 360°</code></li>
         </ul>
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">📝 Example:</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">📝 Example:</h3>
         <p className="text-lg mb-2">If a company spends its annual budget of ₹10,00,000 as follows:</p>
         <ul className="list-disc list-inside text-lg mb-4">
             <li>Salaries – 120°</li>
@@ -164,27 +164,27 @@ const DiTopic = () => {
         </section>
     <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
     <section>
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">📘 Strategies for Data Interpretation</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">📘 Strategies for Data Interpretation</h2>
         <p className="text-lg leading-relaxed mb-4">
         Data Interpretation is not just about calculation—it's about analysis, elimination, and smart observation. Here are some strategies:
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">📊 1. Scan the Question First</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">📊 1. Scan the Question First</h3>
         <p className="text-lg mb-4">
         Read the question before diving into the data. It tells you what to look for, helping you avoid wasting time on unnecessary values.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">⏱️ 2. Estimate Where Possible</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">⏱️ 2. Estimate Where Possible</h3>
         <p className="text-lg mb-4">
         Many exams don't require exact values. If options are far apart, quick estimation using round numbers can save time.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">✖️ 3. Eliminate Wrong Options</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">✖️ 3. Eliminate Wrong Options</h3>
         <p className="text-lg mb-4">
         If an option is clearly too large or small based on the graph, strike it out. This often narrows the choices quickly.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">🧮 4. Master Percentages & Ratios</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">🧮 4. Master Percentages & Ratios</h3>
         <p className="text-lg mb-4">
         Many DI questions revolve around % increase/decrease, ratio comparison, and averages. Know the short tricks and practice regularly.
         </p>
@@ -193,29 +193,29 @@ const DiTopic = () => {
 
     <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
     <section>
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">📝 Common DI Formulas</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">📝 Common DI Formulas</h2>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">🔢 Percentage</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">🔢 Percentage</h3>
         <p className="text-lg mb-2">
         <strong>Formula:</strong> (Part / Whole) × 100
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">🧾 Percentage Change</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">🧾 Percentage Change</h3>
         <p className="text-lg mb-2">
         <strong>Formula:</strong> ((New – Old) / Old) × 100
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">📏 Ratio</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">📏 Ratio</h3>
         <p className="text-lg mb-2">
         <strong>Formula:</strong> a : b = a/b
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">📊 Average</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">📊 Average</h3>
         <p className="text-lg mb-2">
         <strong>Formula:</strong> Sum of Quantities / Number of Quantities
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">🧮 Compound Interest</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">🧮 Compound Interest</h3>
         <p className="text-lg mb-2">
         <strong>Formula:</strong> A = P(1 + r/100)<sup>n</sup>
         </p>
@@ -224,19 +224,19 @@ const DiTopic = () => {
 {/* Pie Charts Section */}
 <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
   <section>
-    <h2 className="text-2xl font-bold text-purple-600 mb-4">📊 Data Interpretation: Pie Charts</h2>
+    <h2 className="text-2xl font-bold text-teal-600 mb-4">📊 Data Interpretation: Pie Charts</h2>
     <p className="text-lg leading-relaxed mb-4">
       A <strong>Pie Chart</strong> is a circular chart divided into sectors where each sector represents a proportion of the whole. It's commonly used to depict percentage distributions.
     </p>
 
-    <h3 className="text-xl font-semibold text-purple-500 mb-2">💡 Tips:</h3>
+    <h3 className="text-xl font-semibold text-teal-500 mb-2">💡 Tips:</h3>
     <ul className="list-disc list-inside text-lg mb-4 space-y-2">
       <li>Total value represented by the pie chart is always 360°.</li>
       <li>To find value represented by a sector: <code>(Sector Angle / 360) × Total Value</code></li>
       <li>To find sector angle for a value: <code>(Value / Total Value) × 360°</code></li>
     </ul>
 
-    <h3 className="text-xl font-semibold text-purple-500 mb-2">📝 Example:</h3>
+    <h3 className="text-xl font-semibold text-teal-500 mb-2">📝 Example:</h3>
     <p className="text-lg mb-2">If a company spends its annual budget of ₹10,00,000 as follows:</p>
     <ul className="list-disc list-inside text-lg mb-4">
       <li>Salaries – 120°</li>
@@ -252,12 +252,12 @@ const DiTopic = () => {
 {/* Line Graphs Section */}
 <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
   <section>
-    <h2 className="text-2xl font-bold text-purple-600 mb-4">📐 Data Interpretation: Line Graphs</h2>
+    <h2 className="text-2xl font-bold text-teal-600 mb-4">📐 Data Interpretation: Line Graphs</h2>
     <p className="text-lg leading-relaxed mb-4">
       <strong>Line Graphs</strong> show data trends over time or comparisons across categories. The data points are plotted on a graph and joined by lines.
     </p>
 
-    <h3 className="text-xl font-semibold text-purple-500 mb-2">💡 Common Use Cases:</h3>
+    <h3 className="text-xl font-semibold text-teal-500 mb-2">💡 Common Use Cases:</h3>
     <ul className="list-disc list-inside text-lg space-y-2 mb-4">
       <li>Tracking growth trends of population, profits, etc.</li>
       <li>Comparing performance across months or years.</li>
@@ -269,7 +269,7 @@ const DiTopic = () => {
 {/* Formulas Section */}
     <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
     <section>
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">🔢 DI Formulas and Tricks</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">🔢 DI Formulas and Tricks</h2>
         <ul className="list-disc list-inside text-lg space-y-2">
         <li><strong>Percentage = (Required Value / Total Value) × 100</strong></li>
         <li><strong>Ratio = Value A / Value B</strong></li>
@@ -282,7 +282,7 @@ const DiTopic = () => {
     {/* Practice Questions Section */}
     <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
     <section>
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">🧠 Practice Questions (Mixed)</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">🧠 Practice Questions (Mixed)</h2>
         <ol className="list-decimal list-inside space-y-3 text-lg">
         <li>A bar graph shows the profits of a company over 6 years. If the average profit over 6 years is ₹2.5 lakh, and the profit in the first 3 years is ₹6 lakh, what is the average profit in the last 3 years?</li>
         <li>In a pie chart, a company allocates 150° for R&D. If total spending is ₹12 crore, what amount is spent on R&D?</li>
@@ -301,7 +301,7 @@ const DiTopic = () => {
     {/* DI Exam Strategy Section */}
     <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
     <section>
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">🧾 DI Strategy for Exams</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">🧾 DI Strategy for Exams</h2>
         <ul className="list-disc list-inside text-lg space-y-2">
         <li>📌 Scan the question set before reading the chart – understand what data is being asked.</li>
         <li>📌 Always note units (lakhs, crores, % etc.) carefully.</li>
@@ -315,17 +315,17 @@ const DiTopic = () => {
     {/* Final Advice Section */}
     <div className=" bg-white rounded-2xl shadow-md p-6 mb-8">
     <section>
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">📌 Final Tips</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">📌 Final Tips</h2>
         <p className="text-lg leading-relaxed mb-4">
         Data Interpretation is all about practice and sharp calculation. Don’t memorize graphs—practice interpreting them. Use rough work efficiently, and try solving 1–2 DI sets daily from past year papers.
         </p>
-        <p className="text-lg text-purple-700 font-semibold">Happy Practicing! 🧠📈</p>
+        <p className="text-lg text-teal-700 font-semibold">Happy Practicing! 🧠📈</p>
     </section>
     </div>
 
     <div className="bg-white rounded-2xl shadow-md p-6 mb-8">
     <section>
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">🚀 Final Tips for DI Mastery</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">🚀 Final Tips for DI Mastery</h2>
         <ul className="list-disc list-inside text-lg space-y-2">
         <li>🔍 Read carefully, avoid rushing into calculations.</li>
         <li>✏️ Write down key figures if needed to avoid re-scanning.</li>
@@ -338,11 +338,11 @@ const DiTopic = () => {
     </div>
 
     <section className=" card mb-12">
-    <h2 className="text-2xl font-bold text-purple-600 mb-2">📐 Data Interpretation: Line Graphs</h2>
+    <h2 className="text-2xl font-bold text-teal-600 mb-2">📐 Data Interpretation: Line Graphs</h2>
     <p className="text-lg leading-relaxed mb-4">
         <strong>Line Graphs</strong> show data trends over time or comparison across different categories. The data points are plotted on a graph and joined by lines.
     </p>
-    <h3 className="text-xl font-semibold text-purple-500 mb-2">💡 Common Use Cases:</h3>
+    <h3 className="text-xl font-semibold text-teal-500 mb-2">💡 Common Use Cases:</h3>
     <ul className="list-disc list-inside mb-4 text-lg">
         <li>Tracking growth trends of population, profits, etc.</li>
         <li>Comparing performances over months or years.</li>
@@ -351,7 +351,7 @@ const DiTopic = () => {
     </section>
 
     <section className="mb-12 card">
-    <h2 className="text-2xl font-bold text-purple-600 mb-2">🔢 DI Formulas and Tricks</h2>
+    <h2 className="text-2xl font-bold text-teal-600 mb-2">🔢 DI Formulas and Tricks</h2>
     <ul className="list-disc list-inside mb-4 text-lg">
         <li><strong>Percentage = (Required Value / Total Value) × 100</strong></li>
         <li><strong>Ratio = Value A / Value B</strong></li>
@@ -361,7 +361,7 @@ const DiTopic = () => {
     </section>
 
     <section className="mb-12 card">
-    <h2 className="text-2xl font-bold text-purple-600 mb-4">🧠 Practice Questions (Mixed)</h2>
+    <h2 className="text-2xl font-bold text-teal-600 mb-4">🧠 Practice Questions (Mixed)</h2>
     <ol className="list-decimal list-inside space-y-3 text-lg">
         <li>A bar graph shows the profits of a company over 6 years. If the average profit over 6 years is ₹2.5 lakh, and the profit in the first 3 years is ₹6 lakh, what is the average profit in the last 3 years?</li>
         <li>In a pie chart, a company allocates 150° for R&D. If total spending is ₹12 crore, what amount is spent on R&D?</li>
@@ -377,7 +377,7 @@ const DiTopic = () => {
     </section>
 
     <section className="card mb-12">
-    <h2 className="text-2xl font-bold text-purple-600 mb-2">🧾 DI Strategy for Exams</h2>
+    <h2 className="text-2xl font-bold text-teal-600 mb-2">🧾 DI Strategy for Exams</h2>
     <ul className="list-disc list-inside text-lg mb-4">
         <li>Scan the question set before reading the chart – understand what data is being asked.</li>
         <li>Always note units (lakhs, crores, % etc.) carefully.</li>
@@ -388,11 +388,11 @@ const DiTopic = () => {
     </section>
 
     <section className="card mb-12">
-    <h2 className="text-2xl font-bold text-purple-600 mb-2">📌 Final Tips</h2>
+    <h2 className="text-2xl font-bold text-teal-600 mb-2">📌 Final Tips</h2>
     <p className="text-lg leading-relaxed mb-4">
         Data Interpretation is all about practice and sharp calculation. Don’t memorize graphs—practice interpreting them. Use rough work efficiently, and try solving 1–2 DI sets daily from past year papers.
     </p>
-    <p className="text-lg text-purple-700 font-semibold">Happy Practicing! 🧠📈</p>
+    <p className="text-lg text-teal-700 font-semibold">Happy Practicing! 🧠📈</p>
     </section>
 
         {/* More Sample Caselet Questions */}

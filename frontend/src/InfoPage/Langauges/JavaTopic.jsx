@@ -3,17 +3,17 @@ import React from "react";
 const JavaBasics = () => {
   return (
     <div className="px-6 py-12 max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-purple-700 mb-4">☕ Introduction to Java</h1>
+        <h1 className="text-4xl font-bold text-teal-700 mb-4">☕ Introduction to Java</h1>
 
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-6 border border-purple-300">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">📌 What is Java?</h2>
+      <div className="bg-white light:bg-gray-800 rounded-xl shadow-md p-6 mb-6 border border-purple-300">
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">📌 What is Java?</h2>
         <p className="text-lg leading-relaxed">
           Java is a high-level, object-oriented, class-based programming language developed by Sun Microsystems and now maintained by Oracle. It is platform-independent due to the Java Virtual Machine (JVM), which allows compiled Java code to run on any system.
         </p>
       </div>
 
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-6 border border-purple-300">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔧 Features of Java</h2>
+      <div className="bg-white light:bg-gray-800 rounded-xl shadow-md p-6 mb-6 border border-purple-300">
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔧 Features of Java</h2>
         <ul className="list-disc pl-6 text-lg">
           <li>Platform Independent</li>
           <li>Object-Oriented</li>
@@ -23,9 +23,9 @@ const JavaBasics = () => {
         </ul>
       </div>
 
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 border border-purple-300">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">💻 Hello World Example</h2>
-        <pre className="bg-gray-100 dark:bg-gray-900 text-sm p-4 rounded-md overflow-auto">
+      <div className="bg-white light:bg-gray-800 rounded-xl shadow-md p-6 border border-purple-300">
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">💻 Hello World Example</h2>
+        <pre className="bg-gray-100 light:bg-gray-900 text-sm p-4 rounded-md overflow-auto">
 {`public class HelloWorld {
   public static void main(String[] args) {
     System.out.println("Hello, World!");
@@ -34,11 +34,11 @@ const JavaBasics = () => {
         </pre>
       </div>
       <br />
-      <h1 className="text-4xl font-bold text-purple-700 mb-6">🔠 Java Basics</h1>
+      <h1 className="text-4xl font-bold text-teal-700 mb-6">🔠 Java Basics</h1>
 
       {/* Variables and Data Types */}
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 mb-6 border border-purple-300">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🧮 Variables and Data Types</h2>
+      <div className="bg-white light:bg-gray-800 rounded-xl shadow-md p-6 mb-6 border border-purple-300">
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🧮 Variables and Data Types</h2>
         <p className="text-lg mb-2">
           Variables are containers for storing data values. Java is statically typed, so each variable must be declared with a type.
         </p>
@@ -49,7 +49,7 @@ const JavaBasics = () => {
           <li><strong>boolean</strong>: true or false</li>
           <li><strong>String</strong>: Text (not a primitive)</li>
         </ul>
-        <pre className="bg-gray-100 dark:bg-gray-900 text-sm p-4 rounded-md overflow-auto">
+        <pre className="bg-gray-100 light:bg-gray-900 text-sm p-4 rounded-md overflow-auto">
 {`int age = 25;
 double price = 19.99;
 char grade = 'A';
@@ -59,8 +59,8 @@ String name = "Alice";`}
       </div>
 
       {/* Operators */}
-      <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 border border-purple-300">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">➕ Operators in Java</h2>
+      <div className="bg-white light:bg-gray-800 rounded-xl shadow-md p-6 border border-purple-300">
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">➕ Operators in Java</h2>
         <p className="text-lg mb-2">
           Operators are used to perform operations on variables and values.
         </p>
@@ -70,7 +70,7 @@ String name = "Alice";`}
           <li><strong>Logical</strong>: &&, ||, !</li>
           <li><strong>Assignment</strong>: =, +=, -=, *=, etc.</li>
         </ul>
-        <pre className="bg-gray-100 dark:bg-gray-900 text-sm p-4 rounded-md overflow-auto">
+        <pre className="bg-gray-100 light:bg-gray-900 text-sm p-4 rounded-md overflow-auto">
 {`int a = 10, b = 20;
 int sum = a + b;
 boolean result = (a < b) && (b > 15);`}
@@ -205,12 +205,12 @@ public static double multiply(double a, double b) {
   </div>
 </section>
 <section className="mb-6 bg-white rounded-xl shadow p-6">
-        <h2 className="text-xl font-semibold text-purple-600 mb-4">🔁 Control Flow in Java</h2>
+        <h2 className="text-xl font-semibold text-teal-600 mb-4">🔁 Control Flow in Java</h2>
         <p>
           Control flow allows your program to make decisions and repeat operations. Java supports conditionals and looping constructs similar to other programming languages.
         </p>
 
-        <h3 className="text-lg font-semibold text-purple-500 mt-4">Conditional Statements:</h3>
+        <h3 className="text-lg font-semibold text-teal-500 mt-4">Conditional Statements:</h3>
         <ul className="list-disc list-inside">
           <li><code>if</code>, <code>else if</code>, and <code>else</code> blocks</li>
           <li><code>switch</code> statements</li>
@@ -225,7 +225,7 @@ if (age >= 18) {
 }`}</code>
         </pre>
 
-        <h3 className="text-lg font-semibold text-purple-500 mt-4">Switch Example:</h3>
+        <h3 className="text-lg font-semibold text-teal-500 mt-4">Switch Example:</h3>
         <pre className="bg-gray-100 p-4 rounded overflow-auto">
           <code>{`int day = 2;
 switch(day) {
@@ -235,7 +235,7 @@ switch(day) {
 }`}</code>
         </pre>
 
-        <h3 className="text-lg font-semibold text-purple-500 mt-4">Loops:</h3>
+        <h3 className="text-lg font-semibold text-teal-500 mt-4">Loops:</h3>
         <ul className="list-disc list-inside">
           <li><code>for</code></li>
           <li><code>while</code></li>
@@ -251,12 +251,12 @@ switch(day) {
 
       {/* 🔹 Section 4: Methods and Recursion */}
       <section className="mb-6 bg-white rounded-xl shadow p-6">
-        <h2 className="text-xl font-semibold text-purple-600 mb-4">🧮 Methods and Recursion</h2>
+        <h2 className="text-xl font-semibold text-teal-600 mb-4">🧮 Methods and Recursion</h2>
         <p>
           Methods are blocks of code that perform a specific task. They help in code reusability and structure.
         </p>
 
-        <h3 className="text-lg font-semibold text-purple-500 mt-4">Defining a Method:</h3>
+        <h3 className="text-lg font-semibold text-teal-500 mt-4">Defining a Method:</h3>
         <pre className="bg-gray-100 p-4 rounded overflow-auto">
           <code>{`public class Demo {
   static void greet() {
@@ -269,7 +269,7 @@ switch(day) {
 }`}</code>
         </pre>
 
-        <h3 className="text-lg font-semibold text-purple-500 mt-4">Method with Parameters & Return:</h3>
+        <h3 className="text-lg font-semibold text-teal-500 mt-4">Method with Parameters & Return:</h3>
         <pre className="bg-gray-100 p-4 rounded overflow-auto">
           <code>{`public class Calculator {
   static int add(int a, int b) {
@@ -283,7 +283,7 @@ switch(day) {
 }`}</code>
         </pre>
 
-        <h3 className="text-lg font-semibold text-purple-500 mt-4">Recursion Example:</h3>
+        <h3 className="text-lg font-semibold text-teal-500 mt-4">Recursion Example:</h3>
         <pre className="bg-gray-100 p-4 rounded overflow-auto">
           <code>{`public class RecursionExample {
   static int factorial(int n) {
@@ -298,16 +298,16 @@ switch(day) {
         </pre>
       </section>
       <section className="mb-12">
-  <h2 className="text-2xl font-bold text-purple-600 mb-4">🔄 Control Flow in Java</h2>
+  <h2 className="text-2xl font-bold text-teal-600 mb-4">🔄 Control Flow in Java</h2>
   <p className="text-lg leading-relaxed mb-4">
     Control flow statements determine the order in which individual statements, instructions, or function calls are executed in a Java program.
   </p>
 
   {/* If-Else Statement */}
-  <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-5 mb-6">
-    <h3 className="text-xl font-semibold text-purple-500 mb-2">👉 If-Else Statement</h3>
+  <div className="bg-white light:bg-gray-800 shadow-md rounded-xl p-5 mb-6">
+    <h3 className="text-xl font-semibold text-teal-500 mb-2">👉 If-Else Statement</h3>
     <p className="mb-3">Used to execute a block of code based on a condition.</p>
-    <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
+    <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
 {`int number = 10;
 if (number > 0) {
     System.out.println("Positive number");
@@ -318,10 +318,10 @@ if (number > 0) {
   </div>
 
   {/* Nested If and Else If */}
-  <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-5 mb-6">
-    <h3 className="text-xl font-semibold text-purple-500 mb-2">🔁 Nested If / Else If</h3>
+  <div className="bg-white light:bg-gray-800 shadow-md rounded-xl p-5 mb-6">
+    <h3 className="text-xl font-semibold text-teal-500 mb-2">🔁 Nested If / Else If</h3>
     <p className="mb-3">Allows checking multiple conditions.</p>
-    <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
+    <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
 {`int marks = 85;
 if (marks >= 90) {
     System.out.println("Grade A");
@@ -334,10 +334,10 @@ if (marks >= 90) {
   </div>
 
   {/* Switch Statement */}
-  <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-5 mb-6">
-    <h3 className="text-xl font-semibold text-purple-500 mb-2">🧭 Switch Statement</h3>
+  <div className="bg-white light:bg-gray-800 shadow-md rounded-xl p-5 mb-6">
+    <h3 className="text-xl font-semibold text-teal-500 mb-2">🧭 Switch Statement</h3>
     <p className="mb-3">Efficient for selecting between many options based on a variable.</p>
-    <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
+    <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
 {`int day = 3;
 switch (day) {
     case 1: System.out.println("Monday"); break;
@@ -349,10 +349,10 @@ switch (day) {
   </div>
 
   {/* Loops - For Loop */}
-  <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-5 mb-6">
-    <h3 className="text-xl font-semibold text-purple-500 mb-2">🔂 For Loop</h3>
+  <div className="bg-white light:bg-gray-800 shadow-md rounded-xl p-5 mb-6">
+    <h3 className="text-xl font-semibold text-teal-500 mb-2">🔂 For Loop</h3>
     <p className="mb-3">Executes a block of code a specific number of times.</p>
-    <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
+    <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
 {`for (int i = 1; i <= 5; i++) {
     System.out.println("Count: " + i);
 }`}
@@ -360,10 +360,10 @@ switch (day) {
   </div>
 
   {/* While Loop */}
-  <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-5 mb-6">
-    <h3 className="text-xl font-semibold text-purple-500 mb-2">🔁 While Loop</h3>
+  <div className="bg-white light:bg-gray-800 shadow-md rounded-xl p-5 mb-6">
+    <h3 className="text-xl font-semibold text-teal-500 mb-2">🔁 While Loop</h3>
     <p className="mb-3">Executes code repeatedly as long as the condition is true.</p>
-    <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
+    <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
 {`int i = 1;
 while (i <= 5) {
     System.out.println(i);
@@ -373,10 +373,10 @@ while (i <= 5) {
   </div>
 
   {/* Do-While Loop */}
-  <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-5 mb-6">
-    <h3 className="text-xl font-semibold text-purple-500 mb-2">🔁 Do-While Loop</h3>
+  <div className="bg-white light:bg-gray-800 shadow-md rounded-xl p-5 mb-6">
+    <h3 className="text-xl font-semibold text-teal-500 mb-2">🔁 Do-While Loop</h3>
     <p className="mb-3">Executes code block at least once, then repeats while the condition is true.</p>
-    <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
+    <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
 {`int i = 1;
 do {
     System.out.println(i);
@@ -386,10 +386,10 @@ do {
   </div>
 
   {/* Break and Continue */}
-  <div className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-5">
-    <h3 className="text-xl font-semibold text-purple-500 mb-2">🛑 Break and Continue</h3>
+  <div className="bg-white light:bg-gray-800 shadow-md rounded-xl p-5">
+    <h3 className="text-xl font-semibold text-teal-500 mb-2">🛑 Break and Continue</h3>
     <p className="mb-3">Used to alter the flow of loops.</p>
-    <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
+    <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded overflow-x-auto text-sm">
 {`for (int i = 1; i <= 5; i++) {
     if (i == 3) continue;
     if (i == 4) break;
@@ -762,7 +762,7 @@ public class Test {
   <h2 className="text-3xl font-bold text-blue-700 mb-6">🧰 Exception Handling & Packages in Java</h2>
 
   {/* Exception Handling - Theory */}
-  <div className="bg-white dark:bg-[#1e293b] rounded-2xl shadow-md p-6 mb-6 border border-gray-200 dark:border-gray-700">
+  <div className="bg-white light:bg-[#1e293b] rounded-2xl shadow-md p-6 mb-6 border border-gray-200 light:border-gray-700">
     <h3 className="text-2xl font-semibold text-blue-600 mb-2">📌 What is Exception Handling?</h3>
     <p className="text-base leading-relaxed">
       Exception handling in Java allows a program to deal with unexpected events (runtime errors) without crashing. It ensures the program remains in a stable state.
@@ -777,9 +777,9 @@ public class Test {
   </div>
 
   {/* Exception Handling - Code Example */}
-  <div className="bg-white dark:bg-[#1e293b] rounded-2xl shadow-md p-6 mb-6 border border-gray-200 dark:border-gray-700">
-    <h3 className="text-xl font-semibold text-purple-600 mb-2">💡 Example: Try-Catch-Finally</h3>
-    <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto">
+  <div className="bg-white light:bg-[#1e293b] rounded-2xl shadow-md p-6 mb-6 border border-gray-200 light:border-gray-700">
+    <h3 className="text-xl font-semibold text-teal-600 mb-2">💡 Example: Try-Catch-Finally</h3>
+    <pre className="bg-gray-100 light:bg-gray-800 p-4 rounded text-sm overflow-x-auto">
 {`public class ExceptionExample {
   public static void main(String[] args) {
     try {
@@ -796,9 +796,9 @@ public class Test {
   </div>
 
   {/* Custom Exception */}
-  <div className="bg-white dark:bg-[#1e293b] rounded-2xl shadow-md p-6 mb-6 border border-gray-200 dark:border-gray-700">
-    <h3 className="text-xl font-semibold text-purple-600 mb-2">🚨 Creating a Custom Exception</h3>
-    <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto">
+  <div className="bg-white light:bg-[#1e293b] rounded-2xl shadow-md p-6 mb-6 border border-gray-200 light:border-gray-700">
+    <h3 className="text-xl font-semibold text-teal-600 mb-2">🚨 Creating a Custom Exception</h3>
+    <pre className="bg-gray-100 light:bg-gray-800 p-4 rounded text-sm overflow-x-auto">
 {`class MyException extends Exception {
   public MyException(String message) {
     super(message);
@@ -818,7 +818,7 @@ public class Test {
   </div>
 
   {/* Packages - Theory */}
-  <div className="bg-white dark:bg-[#1e293b] rounded-2xl shadow-md p-6 mb-6 border border-gray-200 dark:border-gray-700">
+  <div className="bg-white light:bg-[#1e293b] rounded-2xl shadow-md p-6 mb-6 border border-gray-200 light:border-gray-700">
     <h3 className="text-2xl font-semibold text-blue-600 mb-2">📦 What are Packages?</h3>
     <p className="text-base leading-relaxed">
       A package in Java is a namespace that organizes related classes and interfaces. Think of it like a folder for your Java files.
@@ -831,9 +831,9 @@ public class Test {
   </div>
 
   {/* Packages - Example */}
-  <div className="bg-white dark:bg-[#1e293b] rounded-2xl shadow-md p-6 mb-6 border border-gray-200 dark:border-gray-700">
-    <h3 className="text-xl font-semibold text-purple-600 mb-2">📁 Creating and Using a Package</h3>
-    <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-x-auto">
+  <div className="bg-white light:bg-[#1e293b] rounded-2xl shadow-md p-6 mb-6 border border-gray-200 light:border-gray-700">
+    <h3 className="text-xl font-semibold text-teal-600 mb-2">📁 Creating and Using a Package</h3>
+    <pre className="bg-gray-100 light:bg-gray-800 p-4 rounded text-sm overflow-x-auto">
 {`// File: mypack/Message.java
 package mypack;
 public class Message {
@@ -855,11 +855,11 @@ public class TestPackage {
   </div>
 </section>
  <section className="px-6 py-12 max-w-6xl mx-auto">
-      <h1 className="text-4xl font-bold text-purple-700 mb-8">🚀 Advanced Java Topics</h1>
+      <h1 className="text-4xl font-bold text-teal-700 mb-8">🚀 Advanced Java Topics</h1>
 
       {/* Multithreading */}
       <div className="bg-white shadow-md rounded-2xl p-6 mb-8 border-l-4 border-purple-400">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔷 Multithreading</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔷 Multithreading</h2>
         <p className="mb-4">
           Multithreading allows concurrent execution of two or more threads. Java provides the <code>Thread</code> class and the <code>Runnable</code> interface to create and manage threads.
         </p>
@@ -878,7 +878,7 @@ public class TestPackage {
 
       {/* Collections Framework */}
       <div className="bg-white shadow-md rounded-2xl p-6 mb-8 border-l-4 border-purple-400">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔷 Collections Framework</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔷 Collections Framework</h2>
         <p className="mb-4">
           The Java Collections Framework provides a set of interfaces and classes like <code>List</code>, <code>Set</code>, <code>Map</code>, and <code>Queue</code> for storing and manipulating data efficiently.
         </p>
@@ -899,7 +899,7 @@ public class Example {
 
       {/* File I/O */}
       <div className="bg-white shadow-md rounded-2xl p-6 mb-8 border-l-4 border-purple-400">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔷 File I/O in Java</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔷 File I/O in Java</h2>
         <p className="mb-4">
           Java provides classes like <code>File</code>, <code>FileReader</code>, <code>BufferedReader</code>, and <code>FileWriter</code> to handle file input and output operations.
         </p>
@@ -920,7 +920,7 @@ public class FileReadExample {
 
       {/* Java GUI with Swing */}
       <div className="bg-white shadow-md rounded-2xl p-6 mb-8 border-l-4 border-purple-400">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔷 Java GUI (Swing)</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔷 Java GUI (Swing)</h2>
         <p className="mb-4">
           Swing is a part of Java Foundation Classes (JFC) used to create window-based applications. It provides GUI components like <code>JButton</code>, <code>JFrame</code>, and <code>JLabel</code>.
         </p>
@@ -942,7 +942,7 @@ public class MyFrame {
 
       {/* Java 8 Features */}
       <div className="bg-white shadow-md rounded-2xl p-6 mb-8 border-l-4 border-purple-400">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔷 Java 8 Features (Lambda, Streams)</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔷 Java 8 Features (Lambda, Streams)</h2>
         <p className="mb-4">
           Java 8 introduced powerful features like Lambda expressions, Stream API, functional interfaces, and more.
         </p>
@@ -959,7 +959,7 @@ public class LambdaExample {
 
       {/* Interview Questions */}
       <div className="bg-white shadow-md rounded-2xl p-6 mb-8 border-l-4 border-purple-600">
-        <h2 className="text-2xl font-semibold text-purple-700 mb-2">🎯 Common Java Interview Questions</h2>
+        <h2 className="text-2xl font-semibold text-teal-700 mb-2">🎯 Common Java Interview Questions</h2>
         <ul className="list-disc pl-6 text-lg space-y-2">
           <li>What is the difference between abstract class and interface?</li>
           <li>Explain the concept of multithreading in Java.</li>

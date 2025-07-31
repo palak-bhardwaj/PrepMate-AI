@@ -1,13 +1,13 @@
 const CIntroduction = () => {
   return (
-    <div className="card max-w-6xl mx-auto px-6 py-12 text-gray-800 dark:text-gray-200">
-      <h1 className="text-4xl font-extrabold text-purple-700 mb-6 border-b-4 border-purple-300 pb-2">
+    <div className="card max-w-6xl mx-auto px-6 py-12 text-gray-800 light:text-gray-200">
+      <h1 className="text-4xl font-extrabold text-teal-700 mb-6 border-b-4 border-teal-700 pb-2">
         🔰 Introduction to C Programming
       </h1>
 
       {/* What is C? */}
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">💡 What is C?</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">💡 What is C?</h2>
         <p className="text-lg leading-relaxed">
           C is a powerful and widely-used general-purpose programming language developed in the early 1970s by Dennis Ritchie at Bell Labs. It was designed to write system software but quickly became popular for developing application software as well due to its performance, portability, and simplicity.
         </p>
@@ -15,7 +15,7 @@ const CIntroduction = () => {
 
       {/* Why Learn C? */}
       <section className="mb-10 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">🚀 Why Learn C?</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">🚀 Why Learn C?</h2>
         <p className="text-lg leading-relaxed">
           C provides deep insight into how software interacts with hardware. It's the foundation of many modern languages like C++, Java, and Python. Learning C strengthens your grasp of memory management, pointer operations, and low-level computation — skills vital for systems programming, embedded systems, and operating systems.
         </p>
@@ -23,7 +23,7 @@ const CIntroduction = () => {
 
       {/* History of C */}
       <section className="mb-10 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">📜 History of C Language</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">📜 History of C Language</h2>
         <p className="text-lg leading-relaxed">
           C evolved from the B language (itself influenced by BCPL). It was developed at Bell Labs in 1972 as part of the Unix project. Over the years, C has become a standard in software development. The ANSI standardization in 1989 (ANSI C) and the ISO version solidified its place in academia and industry.
         </p>
@@ -31,7 +31,7 @@ const CIntroduction = () => {
 
       {/* Features */}
       <section className="mb-10 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">🌟 Key Features of C</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">🌟 Key Features of C</h2>
         <ul className="list-disc list-inside text-lg leading-relaxed space-y-2">
           <li><strong>Simple & Efficient:</strong> Offers a small set of keywords and syntax for powerful programming.</li>
           <li><strong>Structured:</strong> Supports functions, loops, and conditionals to write clean and modular code.</li>
@@ -43,7 +43,7 @@ const CIntroduction = () => {
 
       {/* Setting Up the Environment */}
       <section className="mb-10 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">🛠️ Setting Up the Development Environment</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">🛠️ Setting Up the Development Environment</h2>
         <p className="text-lg leading-relaxed mb-4">
           To begin writing C programs, you need:
         </p>
@@ -57,19 +57,19 @@ const CIntroduction = () => {
         </p>
       </section>
        <section className="mb-12">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">🧮 Variables and Constants</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">🧮 Variables and Constants</h2>
         <p className="text-lg leading-relaxed">
           Variables are named memory locations used to store data during program execution. Constants are fixed values that do not change throughout the program.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-4 mb-2">🧠 Syntax:</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg overflow-x-auto text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mt-4 mb-2">🧠 Syntax:</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg overflow-x-auto text-sm">
           <code>{`int age = 25;     // Variable
 const float pi = 3.14;  // Constant`}</code>
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-4 mb-2">💻 Example:</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg overflow-x-auto text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mt-4 mb-2">💻 Example:</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg overflow-x-auto text-sm">
           <code>{`#include <stdio.h>
 
 int main() {
@@ -84,7 +84,7 @@ int main() {
 
       {/* Data Types */}
       <section className="mb-12 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">🔤 Data Types in C</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">🔤 Data Types in C</h2>
         <p className="text-lg leading-relaxed mb-4">
           C provides several built-in data types. These are used to declare variables and allocate memory for them.
         </p>
@@ -96,8 +96,8 @@ int main() {
           <li><strong>void</strong> – represents no value (used in functions)</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-4 mb-2">💻 Example:</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg overflow-x-auto text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mt-4 mb-2">💻 Example:</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg overflow-x-auto text-sm">
           <code>{`#include <stdio.h>
 
 int main() {
@@ -115,7 +115,7 @@ int main() {
 
       {/* Operators */}
       <section className="mb-12 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">➕ Operators and Expressions</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">➕ Operators and Expressions</h2>
         <p className="text-lg leading-relaxed mb-4">
           Operators are used to perform operations on variables and values. An expression combines variables, constants, and operators to produce a result.
         </p>
@@ -127,8 +127,8 @@ int main() {
           <li><strong>Increment/Decrement:</strong> ++, --</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-4 mb-2">💻 Example:</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg overflow-x-auto text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mt-4 mb-2">💻 Example:</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg overflow-x-auto text-sm">
           <code>{`#include <stdio.h>
 
 int main() {
@@ -143,7 +143,7 @@ int main() {
 
       {/* Input/Output */}
       <section className="mb-12 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">🖨️ Input and Output</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">🖨️ Input and Output</h2>
         <p className="text-lg leading-relaxed mb-4">
           Input and output in C are handled using standard library functions:
         </p>
@@ -153,8 +153,8 @@ int main() {
           <li><strong>getchar(), putchar()</strong> – character I/O</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-4 mb-2">💻 Example:</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg overflow-x-auto text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mt-4 mb-2">💻 Example:</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg overflow-x-auto text-sm">
           <code>{`#include <stdio.h>
 
 int main() {
@@ -168,22 +168,22 @@ int main() {
       </section>
       {/* Conclusion */}
       <section className="mb-10 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">📌 Summary</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">📌 Summary</h2>
         <p className="text-lg leading-relaxed">
           C is the backbone of modern programming languages. By mastering C, you gain the foundational knowledge needed to write efficient code and understand how software interacts with hardware. Before jumping into advanced languages, learning C provides a solid grounding in computer science principles.
         </p>
       </section>
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">🧠 Conditional Statements</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">🧠 Conditional Statements</h2>
         <p className="text-lg leading-relaxed mb-4">
           Conditional statements allow your program to make decisions and execute code blocks based on certain conditions.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">1. if...else</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">1. if...else</h3>
         <p className="text-lg mb-2">
           Executes one block of code if the condition is true; otherwise another.
         </p>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`int num = 5;
 if (num > 0) {
     printf("Positive number");
@@ -192,8 +192,8 @@ if (num > 0) {
 }`}</code>
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-6 mb-2">2. else if Ladder</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mt-6 mb-2">2. else if Ladder</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`int score = 75;
 if (score >= 90)
     printf("Grade A");
@@ -203,11 +203,11 @@ else
     printf("Grade C");`}</code>
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-6 mb-2">3. switch...case</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mt-6 mb-2">3. switch...case</h3>
         <p className="text-lg mb-2">
           A cleaner alternative to multiple if-else when checking fixed values.
         </p>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`int day = 3;
 switch (day) {
     case 1: printf("Monday"); break;
@@ -220,20 +220,20 @@ switch (day) {
 
       {/* Loops */}
       <section className="mb-12 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">🔁 Looping Statements</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">🔁 Looping Statements</h2>
         <p className="text-lg leading-relaxed mb-4">
           Loops are used to repeat a block of code multiple times until a condition is met.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">1. for Loop</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">1. for Loop</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`for (int i = 1; i <= 5; i++) {
     printf("%d\\n", i);
 }`}</code>
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-6 mb-2">2. while Loop</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mt-6 mb-2">2. while Loop</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`int i = 1;
 while (i <= 5) {
     printf("%d\\n", i);
@@ -241,11 +241,11 @@ while (i <= 5) {
 }`}</code>
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-6 mb-2">3. do...while Loop</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mt-6 mb-2">3. do...while Loop</h3>
         <p className="text-lg mb-2">
           Executes the block at least once before checking the condition.
         </p>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`int i = 1;
 do {
     printf("%d\\n", i);
@@ -256,16 +256,16 @@ do {
 
       {/* Jump Statements */}
       <section className="mb-12 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">🚀 Jump Statements</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">🚀 Jump Statements</h2>
         <p className="text-lg leading-relaxed mb-4">
           Jump statements are used to alter the normal flow of execution in loops and conditionals.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">1. break</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">1. break</h3>
         <p className="text-lg mb-2">
           Terminates the loop or switch-case.
         </p>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`for (int i = 1; i <= 10; i++) {
     if (i == 5)
         break;
@@ -273,11 +273,11 @@ do {
 }`}</code>
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-6 mb-2">2. continue</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mt-6 mb-2">2. continue</h3>
         <p className="text-lg mb-2">
           Skips current iteration and proceeds to the next loop cycle.
         </p>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`for (int i = 1; i <= 5; i++) {
     if (i == 3)
         continue;
@@ -285,11 +285,11 @@ do {
 }`}</code>
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-6 mb-2">3. goto</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mt-6 mb-2">3. goto</h3>
         <p className="text-lg mb-2">
           Transfers control to a labeled statement. Use with caution.
         </p>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`int x = 1;
 if (x < 5)
     goto skip;
@@ -301,21 +301,21 @@ printf("Jumped to label!");`}</code>
         </pre>
       </section>
        <section className="mb-12">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">📦 Arrays in C</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">📦 Arrays in C</h2>
         <p className="text-lg leading-relaxed mb-4">
           An array is a collection of elements of the same data type stored in contiguous memory locations. Arrays can be 1D, 2D, or multidimensional.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">1. One-Dimensional Array</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">1. One-Dimensional Array</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`int marks[5] = {90, 80, 85, 70, 95};
 for (int i = 0; i < 5; i++) {
     printf("Mark %d: %d\\n", i+1, marks[i]);
 }`}</code>
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-6 mb-2">2. Two-Dimensional Array</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mt-6 mb-2">2. Two-Dimensional Array</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};
 for (int i = 0; i < 2; i++) {
     for (int j = 0; j < 3; j++) {
@@ -328,12 +328,12 @@ for (int i = 0; i < 2; i++) {
 
       {/* Strings */}
       <section className="mb-12 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">🔤 Strings in C</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">🔤 Strings in C</h2>
         <p className="text-lg leading-relaxed mb-4">
           Strings in C are arrays of characters terminated with a null character (`\0`). C provides several standard library functions to manipulate strings.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">Common String Functions:</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">Common String Functions:</h3>
         <ul className="list-disc list-inside text-lg space-y-2">
           <li><strong>strlen(s)</strong> – Returns length of string</li>
           <li><strong>strcpy(dest, src)</strong> – Copies one string to another</li>
@@ -341,8 +341,8 @@ for (int i = 0; i < 2; i++) {
           <li><strong>strcmp(s1, s2)</strong> – Compares two strings</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-4 mb-2">💻 Example:</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mt-4 mb-2">💻 Example:</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`#include <stdio.h>
 #include <string.h>
 
@@ -362,13 +362,13 @@ int main() {
 
       {/* Functions */}
       <section className="mb-12 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">🔁 Functions in C</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">🔁 Functions in C</h2>
         <p className="text-lg leading-relaxed mb-4">
           Functions allow modular and reusable code. You define a function once and call it many times.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">1. Function Declaration and Definition</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mb-2">1. Function Declaration and Definition</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`int add(int a, int b) {
     return a + b;
 }
@@ -380,11 +380,11 @@ int main() {
 }`}</code>
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-6 mb-2">2. Recursion</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mt-6 mb-2">2. Recursion</h3>
         <p className="text-lg mb-2">
           A function calling itself is recursion. Useful for problems like factorial, Fibonacci, etc.
         </p>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`int factorial(int n) {
     if (n == 0)
         return 1;
@@ -401,7 +401,7 @@ int main() {
 
       {/* Storage Classes */}
       <section className="mb-12 border-t pt-6">
-        <h2 className="text-2xl font-bold text-purple-600 mb-2">🧭 Storage Classes in C</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-2">🧭 Storage Classes in C</h2>
         <p className="text-lg leading-relaxed mb-4">
           Storage classes define the scope, lifetime, and visibility of variables. C has four storage classes:
         </p>
@@ -412,8 +412,8 @@ int main() {
           <li><strong>extern</strong> – Declares global variable defined in another file.</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-purple-500 mt-4 mb-2">💻 Example (static):</h3>
-        <pre className="bg-gray-100 dark:bg-gray-900 p-4 rounded-lg text-sm">
+        <h3 className="text-xl font-semibold text-teal-500 mt-4 mb-2">💻 Example (static):</h3>
+        <pre className="bg-gray-100 light:bg-gray-900 p-4 rounded-lg text-sm">
           <code>{`void counter() {
     static int count = 0;
     count++;
@@ -429,7 +429,7 @@ int main() {
         </pre>
       </section>
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Command Line Arguments</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Command Line Arguments</h2>
         <p className="mb-4">
           Command-line arguments allow the user to pass parameters to the program at runtime. These are handled by the <code>main()</code> function using two parameters: <code>int argc</code> and <code>char *argv[]</code>.
         </p>
@@ -449,7 +449,7 @@ int main(int argc, char *argv[]) {
 
       {/* Bit Manipulation */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Bit Manipulation</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Bit Manipulation</h2>
         <p className="mb-4">Used to optimize performance, especially in embedded systems. Common bitwise operators: <code>&</code>, <code>|</code>, <code>^</code>, <code>~</code>, <code>&lt;&lt;</code>, <code>&gt;&gt;</code>.</p>
         <pre className="bg-gray-900 text-green-200 p-4 rounded overflow-x-auto text-sm">
 {`int a = 5;  // 0101
@@ -460,7 +460,7 @@ printf("%d", a & b);  // 1 (0001)`}
 
       {/* Macros and Preprocessors */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Macros & Preprocessor Directives</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Macros & Preprocessor Directives</h2>
         <p className="mb-4">Macros replace code before compilation. Common directives: <code>#define</code>, <code>#include</code>, <code>#ifdef</code>, <code>#endif</code>.</p>
         <pre className="bg-gray-900 text-green-200 p-4 rounded overflow-x-auto text-sm">
 {`#define PI 3.14
@@ -472,7 +472,7 @@ printf("%f", AREA(5));`}
 
       {/* Dynamic Memory Allocation */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Dynamic Memory Allocation</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Dynamic Memory Allocation</h2>
         <p className="mb-4">Memory is allocated at runtime using <code>malloc()</code>, <code>calloc()</code>, <code>realloc()</code>, and <code>free()</code>.</p>
         <pre className="bg-gray-900 text-green-200 p-4 rounded overflow-x-auto text-sm">
 {`int *ptr = (int *)malloc(5 * sizeof(int));
@@ -485,7 +485,7 @@ free(ptr);`}
 
       {/* Structures and Unions */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Structures & Unions</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Structures & Unions</h2>
         <p className="mb-4">Structures group different data types. Unions share memory for different members.</p>
         <pre className="bg-gray-900 text-green-200 p-4 rounded overflow-x-auto text-sm">
 {`struct Student {
@@ -502,7 +502,7 @@ union Data {
 
       {/* File Handling */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 File Handling</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 File Handling</h2>
         <p className="mb-4">Use file pointers to handle files: <code>FILE *</code>, <code>fopen()</code>, <code>fclose()</code>, <code>fprintf()</code>, <code>fscanf()</code>.</p>
         <pre className="bg-gray-900 text-green-200 p-4 rounded overflow-x-auto text-sm">
 {`FILE *fp = fopen("data.txt", "w");
@@ -513,7 +513,7 @@ fclose(fp);`}
 
       {/* Function Pointers */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Function Pointers</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Function Pointers</h2>
         <p className="mb-4">Used for callbacks and implementing polymorphism in C.</p>
         <pre className="bg-gray-900 text-green-200 p-4 rounded overflow-x-auto text-sm">
 {`void hello() {
@@ -526,7 +526,7 @@ func_ptr();`}
 
       {/* Double Pointers */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Double Pointers</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Double Pointers</h2>
         <p className="mb-4">A pointer to a pointer, useful in dynamic memory allocation and 2D arrays.</p>
         <pre className="bg-gray-900 text-green-200 p-4 rounded overflow-x-auto text-sm">
 {`int **ptr;
@@ -538,7 +538,7 @@ for(int i = 0; i < 5; i++)
 
       {/* Linked Lists */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Linked Lists (Singly)</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Linked Lists (Singly)</h2>
         <p className="mb-4">A dynamic data structure where each node points to the next.</p>
         <pre className="bg-gray-900 text-green-200 p-4 rounded overflow-x-auto text-sm">
 {`struct Node {
@@ -550,7 +550,7 @@ for(int i = 0; i < 5; i++)
 
       {/* Debugging */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Debugging (GDB)</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Debugging (GDB)</h2>
         <p className="mb-4">Use <code>gdb</code> to debug line-by-line: <code>break</code>, <code>next</code>, <code>print</code>, <code>run</code>, <code>quit</code>.</p>
         <pre className="bg-gray-900 text-green-200 p-4 rounded overflow-x-auto text-sm">
 {`gcc -g program.c -o program
@@ -558,7 +558,7 @@ gdb ./program`}
         </pre>
       </section>
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔰 Introduction</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔰 Introduction</h2>
         <p className="text-lg mb-2">
           Data Structures are essential for organizing and storing data efficiently. In C, we use structures, pointers, and memory management functions to implement common data structures like Linked Lists, Stacks, Queues, Trees, and Graphs.
         </p>
@@ -566,12 +566,12 @@ gdb ./program`}
 
       {/* Linked List */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">📌 Linked List</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">📌 Linked List</h2>
         <p className="text-lg mb-4">
           A Linked List is a dynamic data structure where each element (node) contains data and a pointer to the next node.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-1">➡️ Singly Linked List</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-1">➡️ Singly Linked List</h3>
         <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-auto mb-4 text-sm">
 {`struct Node {
   int data;
@@ -587,7 +587,7 @@ void printList(struct Node* head) {
 }`}
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-1">➡️ Doubly Linked List</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-1">➡️ Doubly Linked List</h3>
         <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-auto mb-4 text-sm">
 {`struct DNode {
   int data;
@@ -596,7 +596,7 @@ void printList(struct Node* head) {
 };`}
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-1">➡️ Circular Linked List</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-1">➡️ Circular Linked List</h3>
         <p className="text-lg mb-2">
           In a circular linked list, the last node points back to the head.
         </p>
@@ -604,12 +604,12 @@ void printList(struct Node* head) {
 
       {/* Stack */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">📌 Stack</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">📌 Stack</h2>
         <p className="text-lg mb-2">
           A Stack follows LIFO (Last-In-First-Out). Common operations are <code>push()</code> and <code>pop()</code>.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-1">➡️ Array Implementation</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-1">➡️ Array Implementation</h3>
         <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-auto mb-4 text-sm">
 {`#define SIZE 100
 int stack[SIZE];
@@ -626,7 +626,7 @@ int pop() {
 }`}
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-1">➡️ Linked List Implementation</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-1">➡️ Linked List Implementation</h3>
         <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-auto mb-4 text-sm">
 {`struct Node {
   int data;
@@ -644,12 +644,12 @@ void push(struct Node** top, int val) {
 
       {/* Queue */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">📌 Queue</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">📌 Queue</h2>
         <p className="text-lg mb-2">
           A Queue follows FIFO (First-In-First-Out). Operations are <code>enqueue()</code> and <code>dequeue()</code>.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-1">➡️ Array Implementation</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-1">➡️ Array Implementation</h3>
         <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-auto mb-4 text-sm">
 {`#define SIZE 100
 int queue[SIZE];
@@ -667,12 +667,12 @@ int dequeue() {
 
       {/* Trees */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">📌 Trees</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">📌 Trees</h2>
         <p className="text-lg mb-2">
           Trees are hierarchical data structures. The Binary Tree is most commonly used.
         </p>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-1">➡️ Binary Tree Node</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-1">➡️ Binary Tree Node</h3>
         <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-auto mb-4 text-sm">
 {`struct TreeNode {
   int data;
@@ -681,7 +681,7 @@ int dequeue() {
 };`}
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-1">➡️ Inorder Traversal (LNR)</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-1">➡️ Inorder Traversal (LNR)</h3>
         <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-auto mb-4 text-sm">
 {`void inorder(struct TreeNode* root) {
   if (root != NULL) {
@@ -695,7 +695,7 @@ int dequeue() {
 
       {/* Graphs */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">📌 Graphs</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">📌 Graphs</h2>
         <p className="text-lg mb-2">
           Graphs consist of vertices and edges. Common representations are:
         </p>
@@ -704,7 +704,7 @@ int dequeue() {
           <li>Adjacency List</li>
         </ul>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-1">➡️ Adjacency Matrix Example</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-1">➡️ Adjacency Matrix Example</h3>
         <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-auto mb-4 text-sm">
 {`int graph[5][5] = {
   {0, 1, 0, 0, 1},
@@ -715,7 +715,7 @@ int dequeue() {
 };`}
         </pre>
 
-        <h3 className="text-xl font-semibold text-purple-500 mb-1">➡️ Depth First Search (DFS)</h3>
+        <h3 className="text-xl font-semibold text-teal-500 mb-1">➡️ Depth First Search (DFS)</h3>
         <pre className="bg-gray-900 text-white p-4 rounded-lg overflow-auto text-sm">
 {`void DFS(int v, int visited[], int graph[5][5]) {
   visited[v] = 1;
@@ -729,12 +729,12 @@ int dequeue() {
       </section>
       {/* Pointers */}
       <section className="mb-10">
-        <h2 className="text-3xl font-semibold text-purple-600 mb-4">🔗 Pointers in C</h2>
+        <h2 className="text-3xl font-semibold text-teal-600 mb-4">🔗 Pointers in C</h2>
         <p className="mb-4 text-lg">
           Pointers are variables that store the address of another variable. They are crucial for memory management and dynamic data structures in C.
         </p>
 
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">👉 Declaration & Initialization</h3>
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">👉 Declaration & Initialization</h3>
         <p className="mb-2">A pointer is declared using the <code>*</code> operator:</p>
         <pre className="bg-gray-100 p-4 rounded mb-4">
 {`int x = 10;
@@ -742,7 +742,7 @@ int *p = &x;  // p holds address of x
 printf("%d", *p);  // prints value at address, i.e., 10`}
         </pre>
 
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">👉 Pointer Arithmetic</h3>
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">👉 Pointer Arithmetic</h3>
         <p className="mb-2">You can increment or decrement a pointer to traverse arrays:</p>
         <pre className="bg-gray-100 p-4 rounded mb-4">
 {`int arr[] = {1, 2, 3};
@@ -750,7 +750,7 @@ int *p = arr;
 printf("%d", *(p + 1)); // prints 2`}
         </pre>
 
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">👉 Pointers and Functions</h3>
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">👉 Pointers and Functions</h3>
         <p className="mb-2">Functions can accept pointers to change values outside their scope:</p>
         <pre className="bg-gray-100 p-4 rounded mb-4">
 {`void update(int *p) {
@@ -764,7 +764,7 @@ int main() {
 }`}
         </pre>
 
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">👉 Double Pointers & Dangling Pointers</h3>
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">👉 Double Pointers & Dangling Pointers</h3>
         <pre className="bg-gray-100 p-4 rounded mb-4">
 {`int x = 5;
 int *p = &x;
@@ -783,7 +783,7 @@ int *dp;
 
       {/* Dynamic Memory Allocation */}
       <section className="mb-10">
-        <h2 className="text-3xl font-semibold text-purple-600 mb-4">📦 Dynamic Memory Allocation</h2>
+        <h2 className="text-3xl font-semibold text-teal-600 mb-4">📦 Dynamic Memory Allocation</h2>
         <p className="mb-4 text-lg">
           Dynamic memory allows allocation during runtime using the standard library functions in <code>&lt;stdlib.h&gt;</code>.
         </p>
@@ -810,12 +810,12 @@ free(arr);  // Always free memory after use`}
 
       {/* File Handling */}
       <section className="mb-10">
-        <h2 className="text-3xl font-semibold text-purple-600 mb-4">📁 File Handling in C</h2>
+        <h2 className="text-3xl font-semibold text-teal-600 mb-4">📁 File Handling in C</h2>
         <p className="mb-4 text-lg">
           File handling allows reading from and writing to files using the <code>FILE*</code> pointer and standard functions from <code>&lt;stdio.h&gt;</code>.
         </p>
 
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">👉 File Opening Modes</h3>
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">👉 File Opening Modes</h3>
         <ul className="list-disc ml-6 text-lg mb-4">
           <li><code>"r"</code>: Open for reading.</li>
           <li><code>"w"</code>: Open for writing (overwrites existing).</li>
@@ -823,7 +823,7 @@ free(arr);  // Always free memory after use`}
           <li><code>"rb", "wb", "ab"</code>: Same as above but in binary mode.</li>
         </ul>
 
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">👉 Writing to File</h3>
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">👉 Writing to File</h3>
         <pre className="bg-gray-100 p-4 rounded mb-4">
 {`FILE *fp = fopen("data.txt", "w");
 if (fp != NULL) {
@@ -832,7 +832,7 @@ if (fp != NULL) {
 }`}
         </pre>
 
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">👉 Reading from File</h3>
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">👉 Reading from File</h3>
         <pre className="bg-gray-100 p-4 rounded mb-4">
 {`FILE *fp = fopen("data.txt", "r");
 char ch;
@@ -849,7 +849,7 @@ if (fp != NULL) {
         </p>
       </section>
       <section>
-         <h1 className="text-4xl font-bold text-purple-700 mb-6">🧩 Macros and Preprocessors in C</h1>
+         <h1 className="text-4xl font-bold text-teal-700 mb-6">🧩 Macros and Preprocessors in C</h1>
 
       <p className="mb-6 text-lg">
         The C Preprocessor (CPP) is a tool that runs before the actual compilation of code begins. It handles **macro substitutions**, **file inclusions**, and **conditional compilation**. These features improve modularity, flexibility, and cross-platform support in C programming.
@@ -857,7 +857,7 @@ if (fp != NULL) {
 
       {/* 1. What are Macros? */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Macros in C</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Macros in C</h2>
         <p className="mb-4">
           A macro is a fragment of code which has been given a name. Whenever the name is used, it is replaced by the contents of the macro. This is done by the preprocessor before actual compilation begins.
         </p>
@@ -876,7 +876,7 @@ int main() {
 
       {/* 2. Macro with Arguments */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Macros with Arguments</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Macros with Arguments</h2>
         <p className="mb-4">You can define macros that accept parameters, similar to functions.</p>
         <pre className="bg-gray-100 rounded-md p-4 overflow-auto mb-4">
 {`#define SQUARE(x) ((x) * (x))
@@ -892,7 +892,7 @@ int main() {
 
       {/* 3. #undef */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 #undef Directive</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 #undef Directive</h2>
         <p className="mb-4">This directive is used to undefine a macro, especially when you want to redefine it.</p>
         <pre className="bg-gray-100 rounded-md p-4 overflow-auto mb-4">
 {`#define PI 3.14
@@ -903,7 +903,7 @@ int main() {
 
       {/* 4. File Inclusion */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 File Inclusion: #include</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 File Inclusion: #include</h2>
         <p className="mb-4">
           The `#include` directive tells the compiler to insert contents of another file. Used to include standard libraries or user-defined headers.
         </p>
@@ -915,7 +915,7 @@ int main() {
 
       {/* 5. Conditional Compilation */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Conditional Compilation</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Conditional Compilation</h2>
         <p className="mb-4">These directives let you compile code selectively depending on certain conditions.</p>
         <pre className="bg-gray-100 rounded-md p-4 overflow-auto mb-4">
 {`#define DEBUG
@@ -937,7 +937,7 @@ int main() {
 
       {/* 6. Predefined Macros */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Predefined Macros</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Predefined Macros</h2>
         <p className="mb-4">C provides built-in macros that provide useful metadata:</p>
         <ul className="list-disc list-inside mb-4">
           <li><code>__DATE__</code>: Current date</li>
@@ -955,7 +955,7 @@ printf("Time: %s\\n", __TIME__);`}
 
       {/* 7. Macro Functions vs Inline Functions */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔹 Macro Functions vs Inline Functions</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔹 Macro Functions vs Inline Functions</h2>
         <p className="mb-4">
           Macros are faster but don’t support type checking. Inline functions (available in C99 onwards) are safer and preferred for complex logic.
         </p>
@@ -973,7 +973,7 @@ inline int max(int a, int b) {
 
       {/* Summary */}
       <section className="mb-10">
-        <h2 className="text-2xl font-bold text-purple-700 mt-8 mb-4">📌 Summary</h2>
+        <h2 className="text-2xl font-bold text-teal-700 mt-8 mb-4">📌 Summary</h2>
         <ul className="list-disc list-inside">
           <li>Use macros for simple constants or short code fragments.</li>
           <li>Prefer inline functions for type safety and better debugging.</li>
@@ -983,14 +983,14 @@ inline int max(int a, int b) {
       </section>
       </section>
       <section>
-        <h1 className="text-4xl font-bold text-purple-700 mb-6">🛠️ Command Line Arguments in C</h1>
+        <h1 className="text-4xl font-bold text-teal-700 mb-6">🛠️ Command Line Arguments in C</h1>
 
       <p className="mb-4 text-lg">
         Command line arguments allow users to pass parameters to a program at the time of execution.
         This is widely used in real-world applications like passing file names, flags, or configuration values.
       </p>
 
-      <h2 className="text-2xl font-semibold text-purple-600 mt-8 mb-2">🔑 What are <code>argc</code> and <code>argv</code>?</h2>
+      <h2 className="text-2xl font-semibold text-teal-600 mt-8 mb-2">🔑 What are <code>argc</code> and <code>argv</code>?</h2>
       <p className="mb-4">
         In C, the <code>main()</code> function can accept two parameters:
       </p>
@@ -1006,7 +1006,7 @@ inline int max(int a, int b) {
         <li><strong>argv</strong>: Argument Vector - Array of strings representing the arguments.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold text-purple-600 mt-8 mb-2">📦 Example: Simple Echo</h2>
+      <h2 className="text-2xl font-semibold text-teal-600 mt-8 mb-2">📦 Example: Simple Echo</h2>
       <p className="mb-2">This program prints all command-line arguments:</p>
       <pre className="bg-gray-100 p-4 rounded mb-4">
         <code>
@@ -1021,7 +1021,7 @@ inline int max(int a, int b) {
         </code>
       </pre>
 
-      <h2 className="text-2xl font-semibold text-purple-600 mt-8 mb-2">💡 Use Cases</h2>
+      <h2 className="text-2xl font-semibold text-teal-600 mt-8 mb-2">💡 Use Cases</h2>
       <ul className="list-disc pl-6 mb-4">
         <li>Pass file names or paths.</li>
         <li>Toggle flags like verbose/debug mode.</li>
@@ -1029,19 +1029,19 @@ inline int max(int a, int b) {
         <li>Build Unix-like utilities.</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold text-purple-600 mt-8 mb-2">⚠ Common Mistakes</h2>
+      <h2 className="text-2xl font-semibold text-teal-600 mt-8 mb-2">⚠ Common Mistakes</h2>
       <ul className="list-disc pl-6 mb-8">
         <li>Accessing <code>argv[i]</code> without checking <code>argc</code> can lead to segmentation faults.</li>
         <li>Not converting <code>argv[i]</code> strings to numbers using <code>atoi()</code> or <code>strtol()</code> properly.</li>
       </ul>
 
-      <h1 className="text-4xl font-bold text-purple-700 mb-6">🔧 Bitwise Operations in C</h1>
+      <h1 className="text-4xl font-bold text-teal-700 mb-6">🔧 Bitwise Operations in C</h1>
       <p className="mb-4 text-lg">
         Bitwise operators are used to manipulate individual bits of data. These are useful in low-level programming,
         embedded systems, and memory-efficient algorithms.
       </p>
 
-      <h2 className="text-2xl font-semibold text-purple-600 mt-6 mb-2">🧮 Common Bitwise Operators</h2>
+      <h2 className="text-2xl font-semibold text-teal-600 mt-6 mb-2">🧮 Common Bitwise Operators</h2>
       <ul className="list-disc pl-6 mb-4">
         <li><code>&amp;</code> AND</li>
         <li><code>|</code> OR</li>
@@ -1051,7 +1051,7 @@ inline int max(int a, int b) {
         <li><code>&gt;&gt;</code> Right Shift</li>
       </ul>
 
-      <h2 className="text-2xl font-semibold text-purple-600 mt-8 mb-2">📘 Example: Bit Masking</h2>
+      <h2 className="text-2xl font-semibold text-teal-600 mt-8 mb-2">📘 Example: Bit Masking</h2>
       <pre className="bg-gray-100 p-4 rounded mb-4">
         <code>
           int num = 10; {"// 1010"}{"\n"}
@@ -1063,19 +1063,19 @@ inline int max(int a, int b) {
         </code>
       </pre>
 
-      <h2 className="text-2xl font-semibold text-purple-600 mt-6 mb-2">✅ Use Cases</h2>
+      <h2 className="text-2xl font-semibold text-teal-600 mt-6 mb-2">✅ Use Cases</h2>
       <ul className="list-disc pl-6 mb-8">
         <li>Flag manipulation.</li>
         <li>Permissions in OS (e.g., read/write/execute).</li>
         <li>Efficient math operations.</li>
       </ul>
 
-      <h1 className="text-4xl font-bold text-purple-700 mb-6">🧯 Error Handling in C</h1>
+      <h1 className="text-4xl font-bold text-teal-700 mb-6">🧯 Error Handling in C</h1>
       <p className="mb-4 text-lg">
         C doesn’t provide exception handling like C++/Java, but errors are handled using return values and global error indicators.
       </p>
 
-      <h2 className="text-2xl font-semibold text-purple-600 mt-6 mb-2">📍 errno and perror()</h2>
+      <h2 className="text-2xl font-semibold text-teal-600 mt-6 mb-2">📍 errno and perror()</h2>
       <p className="mb-2">
         When a system or library call fails, <code>errno</code> is set to indicate the error.
       </p>
@@ -1096,7 +1096,7 @@ inline int max(int a, int b) {
         </code>
       </pre>
 
-      <h2 className="text-2xl font-semibold text-purple-600 mt-6 mb-2">📌 Tips for Robust Error Handling</h2>
+      <h2 className="text-2xl font-semibold text-teal-600 mt-6 mb-2">📌 Tips for Robust Error Handling</h2>
       <ul className="list-disc pl-6 mb-12">
         <li>Always check return values of system calls (e.g., <code>fopen</code>, <code>malloc</code>).</li>
         <li>Use <code>perror()</code> for meaningful messages.</li>
@@ -1104,7 +1104,7 @@ inline int max(int a, int b) {
       </ul>
       </section>
       <section>
-        <h1 className="text-4xl font-bold text-purple-700 mb-6">
+        <h1 className="text-4xl font-bold text-teal-700 mb-6">
         💡 C Programming Interview Preparation
       </h1>
 
@@ -1116,7 +1116,7 @@ inline int max(int a, int b) {
       <div className="space-y-10">
         {/* Q1 */}
         <div>
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">
             1. What is the difference between C and C++?
           </h2>
           <ul className="list-disc ml-6 text-lg text-gray-700">
@@ -1128,7 +1128,7 @@ inline int max(int a, int b) {
 
         {/* Q2 */}
         <div>
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">
             2. What is a pointer? How is it different from a normal variable?
           </h2>
           <p className="text-lg mb-2">
@@ -1143,7 +1143,7 @@ inline int max(int a, int b) {
 
         {/* Q3 */}
         <div>
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">
             3. What is the difference between call by value and call by reference?
           </h2>
           <ul className="list-disc ml-6 text-lg text-gray-700">
@@ -1155,7 +1155,7 @@ inline int max(int a, int b) {
 
         {/* Add more blocks as needed */}
         <div>
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">
             4. What is a structure? How is it different from an array?
           </h2>
           <ul className="list-disc ml-6 text-lg text-gray-700">
@@ -1166,7 +1166,7 @@ inline int max(int a, int b) {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">
             5. Explain memory allocation functions in C.
           </h2>
           <ul className="list-disc ml-6 text-lg text-gray-700">
@@ -1178,7 +1178,7 @@ inline int max(int a, int b) {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">
             6. What are storage classes in C?
           </h2>
           <ul className="list-disc ml-6 text-lg text-gray-700">
@@ -1190,7 +1190,7 @@ inline int max(int a, int b) {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">
             7. What are the different data types in C?
           </h2>
           <p className="text-lg text-gray-700">

@@ -3,7 +3,7 @@ import React from "react";
 const PythonFullCourse = () => {
   return (
     <div className="px-6 py-12 max-w-6xl mx-auto">
-      <h1 className="text-4xl font-bold text-purple-700 mb-8">
+      <h1 className="text-4xl font-bold text-teal-700 mb-8">
         🐍 Python Programming: Basics to Advanced
       </h1>
 
@@ -378,45 +378,45 @@ while x > 0:
 </section>
 {/* Section: Python Interview Questions */}
 <section className="mb-12">
-  <h2 className="text-3xl font-bold text-purple-700 mb-4">🎯 Top Python Interview Questions</h2>
+  <h2 className="text-3xl font-bold text-teal-700 mb-4">🎯 Top Python Interview Questions</h2>
   <div className="grid md:grid-cols-2 gap-6">
     <div className="bg-white rounded-2xl p-6 shadow-md">
-      <h3 className="text-xl font-semibold text-purple-600 mb-2">Q1. What are Python's key features?</h3>
+      <h3 className="text-xl font-semibold text-teal-600 mb-2">Q1. What are Python's key features?</h3>
       <p className="text-base text-gray-700">Python is dynamically typed, interpreted, supports OOP, and has a vast standard library.</p>
     </div>
 
     <div className="bg-white rounded-2xl p-6 shadow-md">
-      <h3 className="text-xl font-semibold text-purple-600 mb-2">Q2. Difference between list and tuple?</h3>
+      <h3 className="text-xl font-semibold text-teal-600 mb-2">Q2. Difference between list and tuple?</h3>
       <p className="text-base text-gray-700">Lists are mutable, whereas tuples are immutable. Tuples are faster and memory efficient.</p>
     </div>
 
     <div className="bg-white rounded-2xl p-6 shadow-md">
-      <h3 className="text-xl font-semibold text-purple-600 mb-2">Q3. What is the use of decorators?</h3>
+      <h3 className="text-xl font-semibold text-teal-600 mb-2">Q3. What is the use of decorators?</h3>
       <p className="text-base text-gray-700">Decorators allow modification of function behavior without changing the actual function code.</p>
     </div>
 
     <div className="bg-white rounded-2xl p-6 shadow-md">
-      <h3 className="text-xl font-semibold text-purple-600 mb-2">Q4. What are *args and **kwargs?</h3>
+      <h3 className="text-xl font-semibold text-teal-600 mb-2">Q4. What are *args and **kwargs?</h3>
       <p className="text-base text-gray-700"><code>*args</code> is for variable positional arguments, <code>**kwargs</code> is for variable keyword arguments.</p>
     </div>
 
     <div className="bg-white rounded-2xl p-6 shadow-md">
-      <h3 className="text-xl font-semibold text-purple-600 mb-2">Q5. Explain Python's memory management?</h3>
+      <h3 className="text-xl font-semibold text-teal-600 mb-2">Q5. Explain Python's memory management?</h3>
       <p className="text-base text-gray-700">Python uses reference counting and garbage collection to manage memory.</p>
     </div>
 
     <div className="bg-white rounded-2xl p-6 shadow-md">
-      <h3 className="text-xl font-semibold text-purple-600 mb-2">Q6. What is the difference between is and == in Python?</h3>
+      <h3 className="text-xl font-semibold text-teal-600 mb-2">Q6. What is the difference between is and == in Python?</h3>
       <p className="text-base text-gray-700"><code>is</code> checks identity (same object), while <code>==</code> checks equality of values.</p>
     </div>
 
     <div className="bg-white rounded-2xl p-6 shadow-md">
-      <h3 className="text-xl font-semibold text-purple-600 mb-2">Q7. What is a lambda function?</h3>
+      <h3 className="text-xl font-semibold text-teal-600 mb-2">Q7. What is a lambda function?</h3>
       <p className="text-base text-gray-700">A lambda is an anonymous function written in a single line using the <code>lambda</code> keyword.</p>
     </div>
 
     <div className="bg-white rounded-2xl p-6 shadow-md">
-      <h3 className="text-xl font-semibold text-purple-600 mb-2">Q8. Difference between shallow and deep copy?</h3>
+      <h3 className="text-xl font-semibold text-teal-600 mb-2">Q8. Difference between shallow and deep copy?</h3>
       <p className="text-base text-gray-700">Shallow copy copies only references, deep copy copies nested objects too (independent copy).</p>
     </div>
   </div>
@@ -424,7 +424,7 @@ while x > 0:
 
 {/* Section: Conclusion */}
 <section className="mb-12">
-  <h2 className="text-3xl font-bold text-purple-700 mb-4">🧾 Conclusion</h2>
+  <h2 className="text-3xl font-bold text-teal-700 mb-4">🧾 Conclusion</h2>
   <div className="bg-white rounded-2xl p-6 shadow-md text-base leading-relaxed text-gray-800">
     <p className="mb-4">
       Python is one of the most versatile and beginner-friendly programming languages, powering web applications, data science, automation, AI, and more.
@@ -438,7 +438,7 @@ while x > 0:
     <p className="mb-4">
       Stay curious, keep experimenting, and Python will become your powerful ally in the world of programming!
     </p>
-    <p className="mt-6 text-purple-600 font-semibold">
+    <p className="mt-6 text-teal-600 font-semibold">
       🚀 Happy Coding!
     </p>
   </div>

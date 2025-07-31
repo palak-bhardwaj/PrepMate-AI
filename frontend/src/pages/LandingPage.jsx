@@ -1,19 +1,8 @@
 import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LuSparkles } from "react-icons/lu";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 import main from "../assets/main.png";
-import img1 from "../assets/img1.png";
-import img2 from "../assets/img2.png";
-import img3 from "../assets/img3.png";
-import img4 from "../assets/img4.png";
-import img5 from "../assets/img5.png";
-
 import { APP_FEATURES } from "../utils/data";
 import Modal from '../components/Modal';
 import Login from './Auth/Login';
@@ -121,50 +110,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Explore Section */}
-      <section className="w-full " style={{ backgroundColor: 'var(--color-bg-light)' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="section-header text-[var(--color-footer-text)] text-center mb-10">
-            Explore How It Looks
-          </h2>
-
-          <Swiper
-            modules={[Navigation, Pagination]}
-            navigation
-            pagination={{ clickable: true }}
-            loop={true}
-            spaceBetween={20}
-            slidesPerView={1}
-            breakpoints={{
-              640: { slidesPerView: 2 },
-              768: { slidesPerView: 3 },
-              1024: { slidesPerView: 4 },
-              1280: { slidesPerView: 5 },
-            }}
-            className="w-full"
-          >
-            {[img1, img2, img3, img4, img5].map((image, index) => (
-              <SwiperSlide key={index}>
-                <div
-                  className="rounded-2xl overflow-hidden shadow-md transition-transform duration-300 hover:scale-[1.03] flex items-center justify-center"
-                  style={{
-                    backgroundColor: 'var(--color-card-bg)',
-                    height: '200px',
-                    width: '100%',
-                  }}
-                >
-                  <img
-                    src={image}
-                    alt={`Preview ${index + 1}`}
-                    className="max-h-full max-w-full object-cover transition-transform duration-500"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </section>
-
       {/* Features Section */}
       <section className="w-full py-12 relative" style={{ backgroundColor: 'var(--color-bg-main)' }}>
         <div className="absolute w-96 h-96 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-full blur-3xl opacity-30 top-[-100px] right-[-100px] z-0 animate-pulse" />
@@ -217,7 +162,7 @@ const LandingPage = () => {
         </div>
 
         <div className="mt-4 text-xs text-center text-[var(--color-text-muted)]">
-          Made by @palak
+          Made by @palak & ritesh
         </div>
       </footer>
 

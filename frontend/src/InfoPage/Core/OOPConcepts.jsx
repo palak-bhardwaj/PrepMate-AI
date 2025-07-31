@@ -3,13 +3,13 @@ import React from "react";
 const CppOOPsSection = () => {
   return (
     <div className="px-6 py-10 max-w-5xl mx-auto">
-      <h1 className="text-4xl font-bold text-purple-700 mb-8">
+      <h1 className="text-4xl font-bold text-teal-700 mb-8">
         🧱 Object-Oriented Programming in C++
       </h1>
 
       {/* Theory Card */}
-      <div className="bg-white shadow-lg rounded-2xl p-6 mb-8 border-l-4 border-purple-500">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">📘 Theory: Object-Oriented Programming</h2>
+      <div className="bg-white shadow-lg rounded-2xl p-6 mb-8 border-l-4 border-teal-500">
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">📘 Theory: Object-Oriented Programming</h2>
         <p className="text-lg mb-3">
           C++ is an object-oriented programming language that allows developers to build modular, reusable, and scalable programs by organizing code around objects and classes.
         </p>
@@ -98,10 +98,12 @@ int main() {
           Mastering OOP in C++ is essential for developing complex and maintainable applications. Focus on real-world modeling using classes and objects, understand the power of polymorphism and inheritance, and leverage abstraction to keep your designs clean.
         </p>
       </div>
+      <br /> 
+      {/* change */}
       
       {/* Theory Card */}
-      <div className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6 mb-8 border-l-4 border-purple-500">
-        <h2 className="text-2xl font-semibold mb-3 text-purple-600">📘 Theory</h2>
+      <div className="bg-white light:bg-gray-900 shadow-lg rounded-2xl p-6 mb-8 border-l-4 border-teal-500">
+        <h2 className="text-2xl font-semibold mb-3 text-teal-600">📘 Theory</h2>
         <p className="mb-2">
           Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects", which contain data (fields) and code (methods).
         </p>
@@ -116,9 +118,9 @@ int main() {
       </div>
 
       {/* Code Example Card */}
-      <div className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6 mb-8 border-l-4 border-purple-500">
-        <h2 className="text-2xl font-semibold mb-3 text-purple-600">🧑‍💻 Code Example</h2>
-        <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded text-sm overflow-auto">
+      <div className="bg-white light:bg-gray-900 shadow-lg rounded-2xl p-6 mb-8 border-l-4 border-teal-500">
+        <h2 className="text-2xl font-semibold mb-3 text-teal-600">🧑‍💻 Code Example</h2>
+        <pre className="bg-gray-100 light:bg-gray-800 p-4 rounded text-sm overflow-auto">
 {`#include <iostream>
 using namespace std;
 
@@ -164,8 +166,8 @@ int main() {
       </div>
 
       {/* Tips & Tricks Card */}
-      <div className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6 mb-8 border-l-4 border-purple-500">
-        <h2 className="text-2xl font-semibold mb-3 text-purple-600">💡 Tips & Tricks</h2>
+      <div className="bg-white light:bg-gray-900 shadow-lg rounded-2xl p-6 mb-8 border-l-4 border-teal-500">
+        <h2 className="text-2xl font-semibold mb-3 text-teal-600">💡 Tips & Tricks</h2>
         <ul className="list-disc pl-6 space-y-2 text-base">
           <li>Use <code>virtual</code> keyword to enable runtime polymorphism.</li>
           <li>Constructors can be overloaded for different initialization logic.</li>
@@ -176,8 +178,8 @@ int main() {
       </div>
 
       {/* Interview Questions Card */}
-      <div className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6 mb-8 border-l-4 border-purple-500">
-        <h2 className="text-2xl font-semibold mb-3 text-purple-600">🎯 Interview Questions</h2>
+      <div className="bg-white light:bg-gray-900 shadow-lg rounded-2xl p-6 mb-8 border-l-4 border-teal-500">
+        <h2 className="text-2xl font-semibold mb-3 text-teal-600">🎯 Interview Questions</h2>
         <ul className="list-decimal pl-6 space-y-2 text-base">
           <li>What is the difference between compile-time and runtime polymorphism?</li>
           <li>What is a virtual function? Why is it important?</li>
@@ -188,21 +190,21 @@ int main() {
       </div>
 
       {/* Conclusion Card */}
-      <div className="bg-white dark:bg-gray-900 shadow-lg rounded-2xl p-6 mb-4 border-l-4 border-purple-500">
-        <h2 className="text-2xl font-semibold mb-3 text-purple-600">📌 Conclusion</h2>
+      <div className="bg-white light:bg-gray-900 shadow-lg rounded-2xl p-6 mb-4 border-l-4 border-teal-500">
+        <h2 className="text-2xl font-semibold mb-3 text-teal-600">📌 Conclusion</h2>
         <p>
           OOP is the backbone of modern C++ development. Understanding key concepts like classes, inheritance, polymorphism, and abstraction enables developers to write reusable, scalable, and maintainable code. Practice by building small OOP-based projects such as bank systems, inventory management, or games to master these concepts.
         </p>
       </div>
 
     <div className="px-6 py-12 max-w-6xl mx-auto">
-      <h1 className="text-4xl font-bold text-purple-700 mb-6">
+      <h1 className="text-4xl font-bold text-teal-700 mb-6">
         🚀 Advanced C++ Concepts
       </h1>
 
       {/* Templates and STL */}
-      <div className="bg-white rounded-2xl shadow-md p-6 mb-6 border-l-4 border-purple-500">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-2">
+      <div className="bg-white rounded-2xl shadow-md p-6 mb-6 border-l-4 border-teal-500">
+        <h2 className="text-2xl font-semibold text-teal-600 mb-2">
           🧩 Templates and STL (Standard Template Library)
         </h2>
         <p className="text-lg mb-4">
@@ -289,8 +291,8 @@ int main() {
       </div>
 
       {/* Tips and Tricks */}
-      <div className="bg-purple-50 border-l-4 border-purple-400 p-6 rounded-xl mb-6">
-        <h2 className="text-xl font-semibold text-purple-600 mb-2">🎯 Tips & Tricks</h2>
+      <div className="bg-teal-50 border-l-4 border-teal-400 p-6 rounded-xl mb-6">
+        <h2 className="text-xl font-semibold text-teal-600 mb-2">🎯 Tips & Tricks</h2>
         <ul className="list-disc list-inside text-base">
           <li>Use STL containers (vector, map, set) for efficient code.</li>
           <li>Templates reduce redundancy in generic functions/classes.</li>

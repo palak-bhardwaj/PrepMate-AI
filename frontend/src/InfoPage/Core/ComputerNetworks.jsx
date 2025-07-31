@@ -3,20 +3,20 @@ import React from "react";
 const ComputerNetworks = () => {
   return (
     <div className="px-6 py-12 max-w-6xl mx-auto">
-      <h1 className="text-4xl font-bold text-purple-700 mb-8">🌐 Computer Networks</h1>
+      <h1 className="text-4xl font-bold text-teal-700 mb-8">🌐 Computer Networks</h1>
 
       {/* Theory Section */}
       <section className="grid md:grid-cols-2 gap-6 mb-12">
-        <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-purple-300">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">🔗 What is a Network?</h2>
+        <div className="bg-white light:bg-gray-900 rounded-2xl shadow-lg p-6 border border-text-teal-300">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">🔗 What is a Network?</h2>
           <p className="text-lg">
             A computer network is a collection of interconnected devices that can communicate
             and share resources. The internet is the largest example of a network.
           </p>
         </div>
 
-        <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-purple-300">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">📶 Types of Networks</h2>
+        <div className="bg-white light:bg-gray-900 rounded-2xl shadow-lg p-6 border border-text-teal-300">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">📶 Types of Networks</h2>
           <ul className="list-disc list-inside text-lg space-y-1">
             <li>LAN (Local Area Network)</li>
             <li>MAN (Metropolitan Area Network)</li>
@@ -25,8 +25,8 @@ const ComputerNetworks = () => {
           </ul>
         </div>
 
-        <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-purple-300">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">🛠 OSI Model</h2>
+        <div className="bg-white light:bg-gray-900 rounded-2xl shadow-lg p-6 border border-text-teal-300">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">🛠 OSI Model</h2>
           <p className="text-lg">
             OSI (Open Systems Interconnection) is a 7-layer architecture:
           </p>
@@ -41,8 +41,8 @@ const ComputerNetworks = () => {
           </ul>
         </div>
 
-        <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg p-6 border border-purple-300">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">💾 TCP/IP Model</h2>
+        <div className="bg-white light:bg-gray-900 rounded-2xl shadow-lg p-6 border border-text-teal-300">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">💾 TCP/IP Model</h2>
           <p className="text-lg">
             The TCP/IP model has 4 layers: Application, Transport, Internet, and Network Access.
             It is the foundation of the modern internet.
@@ -52,18 +52,18 @@ const ComputerNetworks = () => {
 
       {/* Tips & Tricks */}
       <section className="mb-12">
-        <h2 className="text-3xl font-bold text-purple-700 mb-4">💡 Tips & Tricks</h2>
+        <h2 className="text-3xl font-bold text-teal-700 mb-4">💡 Tips & Tricks</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="bg-purple-50 dark:bg-gray-800 p-5 rounded-xl shadow-md">
+          <div className="bg-text-teal-50 light:bg-gray-800 p-5 rounded-xl shadow-md">
             <p>🔸 Remember the OSI model using: <strong>All People Seem To Need Data Processing</strong>.</p>
           </div>
-          <div className="bg-purple-50 dark:bg-gray-800 p-5 rounded-xl shadow-md">
+          <div className="bg-=text-teal-50 light:bg-gray-800 p-5 rounded-xl shadow-md">
             <p>🔸 TCP is reliable, connection-oriented; UDP is fast, connectionless.</p>
           </div>
-          <div className="bg-purple-50 dark:bg-gray-800 p-5 rounded-xl shadow-md">
+          <div className="bg-=text-teal-50 light:bg-gray-800 p-5 rounded-xl shadow-md">
             <p>🔸 IP addresses are divided into 5 classes; A, B, C are common.</p>
           </div>
-          <div className="bg-purple-50 dark:bg-gray-800 p-5 rounded-xl shadow-md">
+          <div className="bg-=text-teal-50 light:bg-gray-800 p-5 rounded-xl shadow-md">
             <p>🔸 DNS resolves human-readable names to IP addresses (e.g., google.com → 142.250.182.206).</p>
           </div>
         </div>
@@ -71,7 +71,7 @@ const ComputerNetworks = () => {
 
       {/* Interview Questions */}
       <section className="mb-12 card">
-        <h2 className="text-3xl font-bold text-purple-700 mb-4">📝 Common Interview Questions</h2>
+        <h2 className="text-3xl font-bold text-teal-700 mb-4">📝 Common Interview Questions</h2>
         <ul className="list-disc list-inside text-lg space-y-2">
           <li>Explain the OSI and TCP/IP models.</li>
           <li>What is the difference between TCP and UDP?</li>
@@ -83,19 +83,19 @@ const ComputerNetworks = () => {
       </section>
 
       {/* Conclusion */}
-      <section className=" card bg-purple-100 dark:bg-gray-800 p-6 rounded-2xl shadow-lg border border-purple-300">
-        <h2 className="text-2xl font-bold text-purple-700 mb-2">✅ Conclusion</h2>
+      <section className=" card bg-purple-100 light:bg-gray-800 p-6 rounded-2xl shadow-lg border border-text-teal-300">
+        <h2 className="text-2xl font-bold text-teal-700 mb-2">✅ Conclusion</h2>
         <p className="text-lg">
           Computer Networks are essential for modern communication. From understanding protocols like TCP/IP to
           mastering models like OSI, a solid grasp of networking concepts is crucial for software engineers, system administrators,
           and cybersecurity experts. Focus on models, routing, protocols, and real-world applications to master this domain.
         </p>
       </section>
-        <h2 className="text-3xl font-bold text-purple-600 mb-6">🌐 Advanced Computer Networks</h2>
+        <h2 className="text-3xl font-bold text-teal-600 mb-6">🌐 Advanced Computer Networks</h2>
 
       {/* Routing Protocols */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 mb-8">
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">🚦 Routing Protocols</h3>
+      <div className="bg-white light:bg-gray-800 rounded-2xl shadow p-6 mb-8">
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">🚦 Routing Protocols</h3>
         <p className="text-lg mb-3">
           Routing protocols determine how data packets are forwarded from source to destination across networks. There are two major types:
         </p>
@@ -106,8 +106,8 @@ const ComputerNetworks = () => {
       </div>
 
       {/* TCP/IP vs OSI */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 mb-8">
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">📦 TCP/IP vs OSI Model</h3>
+      <div className="bg-white light:bg-gray-800 rounded-2xl shadow p-6 mb-8">
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">📦 TCP/IP vs OSI Model</h3>
         <p className="text-lg mb-3">
           While OSI is a theoretical model with 7 layers, TCP/IP is a practical implementation with 4 layers:
         </p>
@@ -118,8 +118,8 @@ const ComputerNetworks = () => {
       </div>
 
       {/* Firewalls and Network Security */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 mb-8">
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">🛡️ Firewalls & Network Security</h3>
+      <div className="bg-white light:bg-gray-800 rounded-2xl shadow p-6 mb-8">
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">🛡️ Firewalls & Network Security</h3>
         <p className="text-lg">
           A firewall is a security system that monitors and controls incoming and outgoing network traffic.
         </p>
@@ -131,8 +131,8 @@ const ComputerNetworks = () => {
       </div>
 
       {/* IPv4 vs IPv6 */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 mb-8">
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">🌐 IPv4 vs IPv6</h3>
+      <div className="bg-white light:bg-gray-800 rounded-2xl shadow p-6 mb-8">
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">🌐 IPv4 vs IPv6</h3>
         <p className="text-lg mb-3">
           <strong>IPv4:</strong> 32-bit address (e.g., 192.168.1.1)<br />
           <strong>IPv6:</strong> 128-bit address (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334)
@@ -144,8 +144,8 @@ const ComputerNetworks = () => {
       </div>
 
       {/* Wireless & Mobile Networks */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 mb-8">
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">📡 Wireless & Mobile Networks</h3>
+      <div className="bg-white light:bg-gray-800 rounded-2xl shadow p-6 mb-8">
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">📡 Wireless & Mobile Networks</h3>
         <p className="text-lg">
           These networks allow communication without physical cables. They include:
         </p>
@@ -157,8 +157,8 @@ const ComputerNetworks = () => {
       </div>
 
       {/* Practice Interview Questions */}
-      <div className="bg-white dark:bg-gray-800 rounded-2xl shadow p-6 mb-8">
-        <h3 className="text-2xl font-semibold text-purple-500 mb-2">📋 Practice Interview Questions</h3>
+      <div className="bg-white light:bg-gray-800 rounded-2xl shadow p-6 mb-8">
+        <h3 className="text-2xl font-semibold text-teal-500 mb-2">📋 Practice Interview Questions</h3>
         <ul className="list-decimal list-inside ml-4 text-lg space-y-1">
           <li>Explain the differences between TCP and UDP.</li>
           <li>What is a subnet mask and how is it used?</li>
@@ -171,8 +171,8 @@ const ComputerNetworks = () => {
       </div>
 
       {/* Conclusion */}
-      <div className="bg-purple-100 dark:bg-purple-900 rounded-2xl shadow p-6 mb-8">
-        <h3 className="text-2xl font-semibold text-purple-600 dark:text-purple-300 mb-2">✅ Conclusion</h3>
+      <div className="bg-light-100 light:bg-purple-900 rounded-2xl shadow p-6 mb-8">
+        <h3 className="text-2xl font-semibold text-teal-600 light:text-teal-300 mb-2">✅ Conclusion</h3>
         <p className="text-lg">
           Computer Networks form the foundation of the modern internet. A deep understanding of protocols,
           addressing schemes, and security mechanisms is crucial for anyone aspiring to enter the world of
@@ -180,8 +180,8 @@ const ComputerNetworks = () => {
         </p>
       </div>
       {/* DNS & DHCP */}
-<div className="bg-white dark:bg-gray-900 shadow-md rounded-2xl p-6 mb-6">
-  <h2 className="text-2xl font-bold text-purple-600 mb-2">🌐 DNS & DHCP</h2>
+<div className="bg-white light:bg-gray-900 shadow-md rounded-2xl p-6 mb-6">
+  <h2 className="text-2xl font-bold text-teal-600 mb-2">🌐 DNS & DHCP</h2>
   <p className="text-lg leading-relaxed mb-3">
     <strong>DNS (Domain Name System)</strong> translates domain names (like www.example.com) into IP addresses. It's essential for locating services on the internet.
     <br />
@@ -195,8 +195,8 @@ const ComputerNetworks = () => {
 </div>
 
 {/* NAT */}
-<div className="bg-white dark:bg-gray-900 shadow-md rounded-2xl p-6 mb-6">
-  <h2 className="text-2xl font-bold text-purple-600 mb-2">🔁 NAT (Network Address Translation)</h2>
+<div className="bg-white light:bg-gray-900 shadow-md rounded-2xl p-6 mb-6">
+  <h2 className="text-2xl font-bold text-teal-600 mb-2">🔁 NAT (Network Address Translation)</h2>
   <p className="text-lg leading-relaxed mb-3">
     NAT allows multiple devices on a private network to access the internet using a single public IP address.
   </p>
@@ -208,8 +208,8 @@ const ComputerNetworks = () => {
 </div>
 
 {/* VPN */}
-<div className="bg-white dark:bg-gray-900 shadow-md rounded-2xl p-6 mb-6">
-  <h2 className="text-2xl font-bold text-purple-600 mb-2">🔒 VPN (Virtual Private Network)</h2>
+<div className="bg-white light:bg-gray-900 shadow-md rounded-2xl p-6 mb-6">
+  <h2 className="text-2xl font-bold text-teal-600 mb-2">🔒 VPN (Virtual Private Network)</h2>
   <p className="text-lg leading-relaxed mb-3">
     VPN creates a secure, encrypted connection over a public network, often the internet.
   </p>
@@ -221,8 +221,8 @@ const ComputerNetworks = () => {
 </div>
 
 {/* QoS */}
-<div className="bg-white dark:bg-gray-900 shadow-md rounded-2xl p-6 mb-6">
-  <h2 className="text-2xl font-bold text-purple-600 mb-2">📊 QoS (Quality of Service)</h2>
+<div className="bg-white light:bg-gray-900 shadow-md rounded-2xl p-6 mb-6">
+  <h2 className="text-2xl font-bold text-teal-600 mb-2">📊 QoS (Quality of Service)</h2>
   <p className="text-lg leading-relaxed mb-3">
     QoS manages network resources by prioritizing different types of traffic to ensure performance for critical applications.
   </p>
@@ -234,8 +234,8 @@ const ComputerNetworks = () => {
 </div>
 
 {/* Application Layer Protocols */}
-<div className="bg-white dark:bg-gray-900 shadow-md rounded-2xl p-6 mb-6">
-  <h2 className="text-2xl font-bold text-purple-600 mb-2">📡 Application Layer Protocols</h2>
+<div className="bg-white light:bg-gray-900 shadow-md rounded-2xl p-6 mb-6">
+  <h2 className="text-2xl font-bold text-teal-600 mb-2">📡 Application Layer Protocols</h2>
   <p className="text-lg leading-relaxed mb-3">
     These protocols operate at the top of the OSI model and enable user-level functionalities.
   </p>
@@ -250,8 +250,8 @@ const ComputerNetworks = () => {
 <section className="px-6 py-12 max-w-5xl mx-auto">
   <div className="grid md:grid-cols-2 gap-6">
     {/* Summary Card */}
-    <div className="bg-white dark:bg-[#1e1e2f] shadow-lg rounded-2xl p-6 border border-purple-300">
-      <h2 className="text-2xl font-bold text-purple-600 mb-4">📌 Computer Networks Summary</h2>
+    <div className="bg-white light:bg-[#1e1e2f] shadow-lg rounded-2xl p-6 border border-text-teal-300">
+      <h2 className="text-2xl font-bold text-teal-600 mb-4">📌 Computer Networks Summary</h2>
       <ul className="list-disc list-inside text-lg space-y-2">
         <li><strong>OSI Model:</strong> 7-layer model guiding network communication.</li>
         <li><strong>TCP/IP:</strong> Real-world protocol suite with 4 layers.</li>
@@ -267,8 +267,8 @@ const ComputerNetworks = () => {
     </div>
 
     {/* Interview Questions Card */}
-    <div className="bg-white dark:bg-[#1e1e2f] shadow-lg rounded-2xl p-6 border border-purple-300">
-      <h2 className="text-2xl font-bold text-purple-600 mb-4">💼 Interview Questions</h2>
+    <div className="bg-white light:bg-[#1e1e2f] shadow-lg rounded-2xl p-6 border border-text-teal-300">
+      <h2 className="text-2xl font-bold text-teal-600 mb-4">💼 Interview Questions</h2>
       <ul className="list-decimal list-inside text-lg space-y-2">
         <li>What is the difference between TCP and UDP?</li>
         <li>Explain the 7 layers of the OSI model with examples.</li>

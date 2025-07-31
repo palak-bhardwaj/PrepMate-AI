@@ -3,13 +3,13 @@ import React from "react";
 const SoftwareEngineering = () => {
   return (
     <div className="px-6 py-12 max-w-6xl mx-auto">
-      <h1 className="text-4xl font-bold text-purple-700 mb-8 text-center">
+      <h1 className="text-4xl font-bold text-teal-700 mb-8 text-center">
         💻 Software Engineering Complete Guide
       </h1>
 
       {/* Software Development Models */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">📐 Software Development Models</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">📐 Software Development Models</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="card">
             <h3 className="text-xl font-semibold">Waterfall Model</h3>
@@ -32,7 +32,7 @@ const SoftwareEngineering = () => {
 
       {/* Agile Methodologies */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">🏃 Agile Methodologies</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">🏃 Agile Methodologies</h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="card">
             <h3 className="text-xl font-semibold">Scrum</h3>
@@ -51,7 +51,7 @@ const SoftwareEngineering = () => {
 
       {/* Software Design Principles */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">🎯 Design Principles</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">🎯 Design Principles</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="card">
             <h3 className="text-xl font-semibold">SOLID Principles</h3>
@@ -66,7 +66,7 @@ const SoftwareEngineering = () => {
 
       {/* Testing */}
       <section className="mb-12">
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">🧪 Software Testing</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">🧪 Software Testing</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="card">
             <h3 className="text-xl font-semibold">Black-box & White-box Testing</h3>
@@ -81,7 +81,7 @@ const SoftwareEngineering = () => {
 
       {/* Requirement Engineering */}
       <section className="mb-12 card">
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">📋 Requirement Engineering</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">📋 Requirement Engineering</h2>
         <p>Involves gathering, analyzing, validating, and documenting the requirements of the software.</p>
         <ul className="list-disc pl-6">
           <li>Functional vs Non-functional Requirements</li>
@@ -92,7 +92,7 @@ const SoftwareEngineering = () => {
 
       {/* Project Management */}
       <section className="mb-12 card">
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">📊 Project Management</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">📊 Project Management</h2>
         <ul className="list-disc pl-6">
           <li>Effort Estimation: LOC, Function Point, COCOMO</li>
           <li>Scheduling Techniques: Gantt Chart, PERT, CPM</li>
@@ -102,7 +102,7 @@ const SoftwareEngineering = () => {
 
       {/* CASE Tools */}
       <section className="mb-12 card">
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">🛠️ CASE Tools</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">🛠️ CASE Tools</h2>
         <p>Computer-Aided Software Engineering tools assist in project management, design, testing, etc.</p>
         <ul className="list-disc pl-6">
           <li>Project Tools: JIRA, Trello</li>
@@ -113,7 +113,7 @@ const SoftwareEngineering = () => {
 
       {/* Software Maintenance */}
       <section className="mb-12 card">
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">🔄 Software Maintenance</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">🔄 Software Maintenance</h2>
         <p>Post-delivery process of fixing issues and improving performance or features.</p>
         <ul className="list-disc pl-6">
           <li>Corrective, Adaptive, Perfective, Preventive maintenance types</li>
@@ -122,7 +122,7 @@ const SoftwareEngineering = () => {
 
       {/* Software Quality */}
       <section className="mb-12 card">
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">✅ Software Quality Attributes</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">✅ Software Quality Attributes</h2>
         <ul className="list-disc pl-6">
           <li>Reliability</li>
           <li>Usability</li>
@@ -134,14 +134,14 @@ const SoftwareEngineering = () => {
 
       {/* Ethics */}
       <section className="mb-12 card">
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">⚖️ Ethics in Software Engineering</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">⚖️ Ethics in Software Engineering</h2>
         <p>Engineers should follow professional ethics such as confidentiality, user safety, and code integrity.</p>
         <p>Guidelines: IEEE/ACM Code of Ethics</p>
       </section>
 
       {/* Conclusion and Interview Questions */}
       <section className="card">
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">📌 Conclusion & Interview Questions</h2>
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">📌 Conclusion & Interview Questions</h2>
         <p className="mb-4">Software Engineering forms the backbone of modern application development. Mastering SDLC, testing, project management, and ethical principles helps you become an industry-ready developer.</p>
         <ul className="list-disc pl-6">
           <li>Explain the phases of SDLC.</li>
@@ -154,8 +154,8 @@ const SoftwareEngineering = () => {
       </section>
       <br />
       <div className="grid md:grid-cols-2 gap-6">
-        <div className="bg-white dark:bg-[#1e1e2f] border border-purple-300 shadow-lg rounded-2xl p-6">
-          <h2 className="text-2xl font-bold text-purple-600 mb-4">📌 Key Concepts</h2>
+        <div className="bg-white light:bg-[#1e1e2f] border border-teal-300 shadow-lg rounded-2xl p-6">
+          <h2 className="text-2xl font-bold text-teal-600 mb-4">📌 Key Concepts</h2>
           <ul className="list-disc list-inside text-lg space-y-2">
             <li><strong>SDLC:</strong> Software Development Life Cycle - phases like Requirement, Design, Development, Testing, Deployment, Maintenance.</li>
             <li><strong>Agile Model:</strong> Iterative approach focused on collaboration, feedback, and flexibility.</li>
@@ -169,8 +169,8 @@ const SoftwareEngineering = () => {
         </div>
 
         {/* Interview Questions */}
-        <div className="bg-white dark:bg-[#1e1e2f] border border-purple-300 shadow-lg rounded-2xl p-6">
-          <h2 className="text-2xl font-bold text-purple-600 mb-4">💼 Interview Questions</h2>
+        <div className="bg-white light:bg-[#1e1e2f] border border-teal-300 shadow-lg rounded-2xl p-6">
+          <h2 className="text-2xl font-bold text-teal-600 mb-4">💼 Interview Questions</h2>
           <ul className="list-decimal list-inside text-lg space-y-2">
             <li>What is the difference between Agile and Waterfall models?</li>
             <li>Explain the phases of SDLC.</li>
@@ -187,8 +187,8 @@ const SoftwareEngineering = () => {
       </div>
 
       {/* Conclusion */}
-      <div className="mt-12 p-6 bg-white dark:bg-[#1e1e2f] border border-purple-300 shadow-lg rounded-2xl">
-        <h2 className="text-2xl font-bold text-purple-600 mb-4">📍 Conclusion</h2>
+      <div className="mt-12 p-6 bg-white light:bg-[#1e1e2f] border border-teal-300 shadow-lg rounded-2xl">
+        <h2 className="text-2xl font-bold text-teal-600 mb-4">📍 Conclusion</h2>
         <p className="text-lg leading-relaxed">
           Software Engineering ensures disciplined software creation through defined processes and principles. Understanding models like SDLC, Agile, and effective testing & maintenance practices is crucial for building scalable and error-free software. This knowledge is vital for developers and project managers alike to ensure successful project delivery.
         </p>

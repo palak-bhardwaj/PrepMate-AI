@@ -3,12 +3,12 @@ import React from "react";
 const DbmsTopic = () => {
   return (
     <div className="px-6 py-12 max-w-5xl mx-auto text-left">
-      <h1 className="text-4xl font-bold text-purple-700 mb-8">📚 DBMS (Database Management System)</h1>
+      <h1 className="text-4xl font-bold text-teal-700 mb-8">📚 DBMS (Database Management System)</h1>
 
       {/* Theory Section */}
       <div className="grid gap-6">
-        <div className="bg-white rounded-2xl shadow-md p-6 border border-purple-300">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">🧠 DBMS Theory</h2>
+        <div className="bg-white rounded-2xl shadow-md p-6 border border-teal-300">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">🧠 DBMS Theory</h2>
           <p className="text-lg">
             A DBMS is software that allows users to define, create, maintain, and control access to databases. It helps manage data efficiently and allows users to perform multiple tasks such as insertion, deletion, updating, and querying data.
           </p>
@@ -22,8 +22,8 @@ const DbmsTopic = () => {
         </div>
 
         {/* Code Examples */}
-        <div className="bg-white rounded-2xl shadow-md p-6 border border-purple-300">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">📘 Example Queries (SQL)</h2>
+        <div className="bg-white rounded-2xl shadow-md p-6 border border-teal-300">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">📘 Example Queries (SQL)</h2>
           <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-x-auto">
 {`-- Create Table
 CREATE TABLE Students (
@@ -47,8 +47,8 @@ DELETE FROM Students WHERE ID = 1;`}
         </div>
 
         {/* Tips & Tricks */}
-        <div className="bg-white rounded-2xl shadow-md p-6 border border-purple-300">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">💡 Tips & Tricks</h2>
+        <div className="bg-white rounded-2xl shadow-md p-6 border border-teal-300">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">💡 Tips & Tricks</h2>
           <ul className="list-disc pl-6 text-base">
             <li>Always use <code>PRIMARY KEY</code> and <code>FOREIGN KEY</code> constraints to maintain integrity.</li>
             <li>Normalize your tables to at least 3NF to avoid redundancy.</li>
@@ -59,8 +59,8 @@ DELETE FROM Students WHERE ID = 1;`}
         </div>
 
         {/* Interview Questions */}
-        <div className="bg-white rounded-2xl shadow-md p-6 border border-purple-300">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">📝 Interview Questions</h2>
+        <div className="bg-white rounded-2xl shadow-md p-6 border border-teal-300">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">📝 Interview Questions</h2>
           <ul className="list-decimal pl-6 text-base">
             <li>What is normalization and its types?</li>
             <li>Difference between DELETE, TRUNCATE, and DROP.</li>
@@ -76,8 +76,8 @@ DELETE FROM Students WHERE ID = 1;`}
         </div>
 
         {/* Conclusion */}
-        <div className="bg-white rounded-2xl shadow-md p-6 border border-purple-300">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-2">✅ Conclusion</h2>
+        <div className="bg-white rounded-2xl shadow-md p-6 border border-teal-300">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-2">✅ Conclusion</h2>
           <p className="text-lg">
             DBMS is a cornerstone of modern software systems. From simple data retrieval to complex transaction management, a strong understanding of database concepts ensures efficient application design and data integrity. Mastering SQL and understanding data models will greatly enhance your backend and full-stack development capabilities.
           </p>

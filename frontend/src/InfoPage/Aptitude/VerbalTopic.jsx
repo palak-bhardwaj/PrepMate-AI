@@ -94,7 +94,7 @@ const VerbalAbilityTopic = () => {
       </section>
 <br />
       <section className="mb-10 card">
-        <h2 className="text-2xl font-semibold mb-4 text-purple-700">📚 Topics Covered</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-teal-700">📚 Topics Covered</h2>
         <ul className="list-disc pl-6 space-y-2 text-base">
           <li>Reading Comprehension (RC)</li>
           <li>Para Jumbles (Sentence Rearrangement)</li>
@@ -109,10 +109,10 @@ const VerbalAbilityTopic = () => {
 
       {/* Theory Sections */}
       <section className="mb-12 card">
-        <h2 className="text-2xl font-semibold mb-4 text-purple-700">📖 Core Concepts</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-teal-700">📖 Core Concepts</h2>
 
         <div className="mb-8">
-          <h3 className="text-xl font-semibold text-purple-600 mb-2">1. Reading Comprehension</h3>
+          <h3 className="text-xl font-semibold text-teal-600 mb-2">1. Reading Comprehension</h3>
           <p className="mb-2 text-base leading-relaxed">
             RC passages test your ability to understand and analyze a given piece of text. Questions range from direct factual to inference-based.
           </p>
@@ -122,7 +122,7 @@ const VerbalAbilityTopic = () => {
         </div>
 
         <div className="mb-8">
-          <h3 className="text-xl font-semibold text-purple-600 mb-2">2. Sentence Correction</h3>
+          <h3 className="text-xl font-semibold text-teal-600 mb-2">2. Sentence Correction</h3>
           <p className="mb-2 text-base leading-relaxed">
             These questions involve spotting grammatical or structural errors in a sentence. Topics like subject-verb agreement, tenses, modifiers, etc., are commonly tested.
           </p>
@@ -132,14 +132,14 @@ const VerbalAbilityTopic = () => {
         </div>
 
         <div className="mb-8">
-          <h3 className="text-xl font-semibold text-purple-600 mb-2">3. Para Jumbles</h3>
+          <h3 className="text-xl font-semibold text-teal-600 mb-2">3. Para Jumbles</h3>
           <p className="mb-2 text-base leading-relaxed">
             You’re given 4-5 jumbled sentences that form a coherent paragraph when arranged correctly. Look for logical connectors, transitions, and topic sentences.
           </p>
         </div>
 
         <div className="mb-8">
-          <h3 className="text-xl font-semibold text-purple-600 mb-2">4. Vocabulary</h3>
+          <h3 className="text-xl font-semibold text-teal-600 mb-2">4. Vocabulary</h3>
           <p className="mb-2 text-base leading-relaxed">
             Covers synonyms, antonyms, analogies, and word usage in context. Vocabulary strength directly improves comprehension speed and accuracy.
           </p>
@@ -149,7 +149,7 @@ const VerbalAbilityTopic = () => {
         </div>
 
         <div className="mb-8">
-          <h3 className="text-xl font-semibold text-purple-600 mb-2">5. Idioms & Phrases</h3>
+          <h3 className="text-xl font-semibold text-teal-600 mb-2">5. Idioms & Phrases</h3>
           <p className="mb-2 text-base leading-relaxed">
             Common English expressions that aren't always literal. Understanding idioms boosts your interpretation of colloquial texts.
           </p>
@@ -159,56 +159,195 @@ const VerbalAbilityTopic = () => {
         </div>
       </section>
 
-      {/* Theory Card */}
-      <section className="bg-white shadow-lg rounded-2xl p-6 mb-10 border-l-4 border-[var(--color-accent)]">
-        <h2 className="text-2xl font-semibold text-[var(--color-accent)] mb-4">
-          📘 Theory
-        </h2>
-        <p className="text-lg leading-relaxed text-[var(--color-text-muted)]">
-          Verbal Ability assesses a candidate’s command over language, vocabulary,
-          and grammar. It evaluates comprehension skills, logical thinking,
-          sentence construction, and the ability to spot and correct errors.
-          Common question types include:
-        </p>
-        <ul className="list-disc pl-6 mt-4 space-y-2">
-          <li>Synonyms and Antonyms</li>
-          <li>Reading Comprehension</li>
-          <li>Sentence Correction & Completion</li>
-          <li>Para Jumbles</li>
-          <li>Idioms & Phrases</li>
-          <li>One-word Substitution</li>
-        </ul>
-      </section>
+{/* Theory Card */}
+<section className="bg-white shadow-lg rounded-2xl p-6 mb-10 border-l-4 border-[var(--color-accent)]">
+  <h2 className="text-2xl font-semibold text-[var(--color-accent)] mb-4">
+    📘 Theory
+  </h2>
 
-      {/* Practice Questions Card */}
-      <section className="bg-white shadow-lg rounded-2xl p-6 mb-10 border-l-4 border-indigo-400">
-        <h2 className="text-2xl font-semibold text-indigo-500 mb-4">
-          📝 Practice Questions
-        </h2>
+  <p className="text-lg leading-relaxed text-[var(--color-text-muted)]">
+    Verbal Ability assesses a candidate’s command over language, vocabulary,
+    and grammar. It evaluates comprehension skills, logical thinking,
+    sentence construction, and the ability to spot and correct errors.
+    Common question types include:
+  </p>
 
-        <div className="space-y-6 text-base leading-relaxed">
-          <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
-            <strong>Q1:</strong> Choose the correct synonym for "Ephemeral":
-            <br />
-            A) Permanent &nbsp;&nbsp; B) Transient &nbsp;&nbsp; C) Stable &nbsp;&nbsp; D) Enduring
-            <br />
-            <strong>Answer:</strong> B) Transient
-          </div>
+  <div className="mt-6 space-y-6 text-[var(--color-text-muted)] text-base leading-relaxed">
 
-          <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
-            <strong>Q2:</strong> Identify the error: "He do not know the answer."
-            <br />
-            <strong>Answer:</strong> "do" should be "does"
-          </div>
+    <div>
+      <h3 className="font-semibold text-[var(--color-accent)]">🔹 Synonyms and Antonyms</h3>
+      <p>
+        Synonyms are words with similar meanings, while antonyms are words with opposite meanings.
+        Questions test your vocabulary depth and ability to interpret meaning in different contexts.
+        <br /><strong>Example:</strong> Synonym of "Happy" → Joyful | Antonym → Sad
+      </p>
+    </div>
 
-          <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
-            <strong>Q3:</strong> Rearrange the following to form a meaningful sentence:
-            <br />
-            (a) to / (b) the temple / (c) went / (d) they <br />
-            <strong>Answer:</strong> They went to the temple.
-          </div>
-        </div>
-      </section>
+    <div>
+      <h3 className="font-semibold text-[var(--color-accent)]">🔹 Reading Comprehension (RC)</h3>
+      <p>
+        RC questions assess your ability to understand, interpret, and analyze written text.
+        You’ll read a passage and answer questions based on facts, inferences, tone, and theme.
+        <br /><strong>Tip:</strong> Skim for structure, then read closely for details.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-[var(--color-accent)]">🔹 Sentence Correction & Completion</h3>
+      <p>
+        These questions test grammar, sentence structure, verb tense, subject-verb agreement,
+        modifiers, and idiomatic usage. You may be asked to correct errors or complete a sentence meaningfully.
+        <br /><strong>Example:</strong> Incorrect: "She don’t like ice cream." → Correct: "She doesn’t like ice cream."
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-[var(--color-accent)]">🔹 Para Jumbles</h3>
+      <p>
+        Also called sentence rearrangement, this involves organizing a set of jumbled sentences
+        into a coherent and logical paragraph. It tests your understanding of paragraph structure,
+        logical flow, and connectors.
+        <br /><strong>Tip:</strong> Identify the introductory sentence and follow logical connectors.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-[var(--color-accent)]">🔹 Idioms & Phrases</h3>
+      <p>
+        Idioms are expressions with meanings different from the literal words.
+        This section tests your familiarity with common phrases used in English.
+        <br /><strong>Example:</strong> “Kick the bucket” means “to die”, not actually kicking a bucket.
+      </p>
+    </div>
+
+    <div>
+      <h3 className="font-semibold text-[var(--color-accent)]">🔹 One-word Substitution</h3>
+      <p>
+        This involves replacing a phrase or sentence with a single word that conveys the same meaning.
+        It’s a concise way to test vocabulary and word knowledge.
+        <br /><strong>Example:</strong> “A person who writes poems” → <strong>Poet</strong>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+{/* Practice Questions Card */}
+<section className="bg-white shadow-lg rounded-2xl p-6 mb-10 border-l-4 border-indigo-400">
+  <h2 className="text-2xl font-semibold text-indigo-500 mb-4">
+    📝 Practice Questions
+  </h2>
+
+  <div className="space-y-6 text-base leading-relaxed">
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q1:</strong> Choose the correct synonym for "Ephemeral":<br />
+      A) Permanent B) Transient C) Stable D) Enduring<br />
+      <strong>Answer:</strong> B) Transient
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q2:</strong> Identify the error: "He do not know the answer."<br />
+      <strong>Answer:</strong> "do" should be "does"
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q3:</strong> Rearrange the sentence: (a) to / (b) the temple / (c) went / (d) they<br />
+      <strong>Answer:</strong> They went to the temple.
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q4:</strong> Fill in the blank: I have been waiting ______ morning.<br />
+      <strong>Answer:</strong> since
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q5:</strong> Antonym of "Generous":<br />
+      A) Kind B) Stingy C) Honest D) Warm<br />
+      <strong>Answer:</strong> B) Stingy
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q6:</strong> Sentence Improvement: "Unless you will not study, you won’t pass."<br />
+      <strong>Answer:</strong> Remove “will not” → “Unless you study, you won’t pass.”
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q7:</strong> What does the idiom “Break the ice” mean?<br />
+      <strong>Answer:</strong> To start a conversation in a social setting.
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q8:</strong> One word substitution: One who writes poems<br />
+      <strong>Answer:</strong> Poet
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q9:</strong> Choose the correct preposition: She is fond ______ music.<br />
+      <strong>Answer:</strong> of
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q10:</strong> Reported Speech: He said, “I am reading.”<br />
+      <strong>Answer:</strong> He said that he was reading.
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q11:</strong> Article usage: He is ______ honest man.<br />
+      <strong>Answer:</strong> an
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q12:</strong> Identify the correctly spelled word:<br />
+      A) Occassion B) Occasion C) Ocassion D) Ocasion<br />
+      <strong>Answer:</strong> B) Occasion
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q13:</strong> Choose the synonym for “Obstinate”:<br />
+      A) Flexible B) Rigid C) Stubborn D) Calm<br />
+      <strong>Answer:</strong> C) Stubborn
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q14:</strong> Which word is the odd one out?<br />
+      A) Apple B) Banana C) Tomato D) Carrot<br />
+      <strong>Answer:</strong> D) Carrot (It’s a root, others are fruits)
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q15:</strong> Analogy: Book : Reading :: Fork : ?<br />
+      <strong>Answer:</strong> Eating
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q16:</strong> Use "Bear" in a sentence as a verb.<br />
+      <strong>Answer:</strong> I can’t bear this pain anymore.
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q17:</strong> Correct the tense: She go to school every day.<br />
+      <strong>Answer:</strong> She goes to school every day.
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q18:</strong> Choose the word similar to “Diligent”:<br />
+      A) Lazy B) Hardworking C) Careless D) Disloyal<br />
+      <strong>Answer:</strong> B) Hardworking
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q19:</strong> Find the error: She didn't knew the answer.<br />
+      <strong>Answer:</strong> "knew" should be "know"
+    </div>
+
+    <div className="bg-gray-50 p-4 rounded-md border-l-4 border-blue-400">
+      <strong>Q20:</strong> Fill in the blank: The players were tired, ______ they continued.<br />
+      <strong>Answer:</strong> yet
+    </div>
+  </div>
+</section>
+
 
       {/* Tips and Tricks Card */}
       <section className="bg-white shadow-lg rounded-2xl p-6 mb-10 border-l-4 border-emerald-400">
@@ -284,28 +423,28 @@ const VerbalAbilityTopic = () => {
       {/* === Section: Theory === */}
       <section className="grid gap-6 md:grid-cols-2 mb-12">
         <div className="bg-white rounded-xl shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-3">📘 Grammar & Usage</h2>
+          <h2 className="text-2xl font-semibold text-teal-600 mb-3">📘 Grammar & Usage</h2>
           <p className="text-lg leading-relaxed text-gray-700">
             Grammar rules are essential for sentence correction and spotting errors. Focus on subject-verb agreement, tenses, modifiers, articles, prepositions, and voice.
           </p>
         </div>
 
         <div className="bg-white rounded-xl shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-3">📖 Reading Comprehension</h2>
+          <h2 className="text-2xl font-semibold text-teal-600 mb-3">📖 Reading Comprehension</h2>
           <p className="text-lg leading-relaxed text-gray-700">
             Tests your ability to understand, interpret, and infer from passages. Practice both factual and inferential questions. Speed reading and skimming improve performance.
           </p>
         </div>
 
         <div className="bg-white rounded-xl shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-3">🔀 Para Jumbles</h2>
+          <h2 className="text-2xl font-semibold text-teal-600 mb-3">🔀 Para Jumbles</h2>
           <p className="text-lg leading-relaxed text-gray-700">
             These test your logical sequencing skills. Identify opening/closing sentences and use connectors or pronouns as clues. Practice helps develop flow sense.
           </p>
         </div>
 
         <div className="bg-white rounded-xl shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-3">🔤 Vocabulary</h2>
+          <h2 className="text-2xl font-semibold text-teal-600 mb-3">🔤 Vocabulary</h2>
           <p className="text-lg leading-relaxed text-gray-700">
             Includes synonyms, antonyms, word usage, and idioms/phrases. Build vocabulary through daily reading and flashcards. Context-based guessing is key in exams.
           </p>
@@ -314,22 +453,38 @@ const VerbalAbilityTopic = () => {
 
       {/* === Section: Practice Questions === */}
       <section className="mb-12">
-        <div className="bg-white rounded-xl shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-4">📝 Practice Questions</h2>
+        <div className="bg-white rounded-xl shadow-md p-6 border-l-4 border-teal-500">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-4">📝 Practice Questions</h2>
           <ul className="list-disc pl-5 space-y-3 text-gray-800 text-lg">
-            <li><strong>RC:</strong> Read the passage and answer — What is the main idea of the passage?</li>
-            <li><strong>Error Spotting:</strong> He don't have any idea about the plan. [Find the error]</li>
-            <li><strong>Para Jumble:</strong> Reorder the following sentences to form a coherent paragraph.</li>
-            <li><strong>Fill in the blanks:</strong> She is ______ to speak in public. (afraid/afraid of)</li>
-            <li><strong>Synonym:</strong> Choose the word closest in meaning to “Taciturn”.</li>
+            <li><strong>Reading Comprehension:</strong> What is the tone of the author in the given passage?</li>
+            <li><strong>Error Spotting:</strong> She enjoy to play the piano every evening.</li>
+            <li><strong>Fill in the Blanks:</strong> I have been living here ______ five years. (since/for)</li>
+            <li><strong>Para Jumble:</strong> Arrange the sentences to form a meaningful paragraph.</li>
+            <li><strong>Synonym:</strong> Find the word closest in meaning to “Obsolete”.</li>
+            <li><strong>Antonym:</strong> Choose the word opposite in meaning to “Hostile”.</li>
+            <li><strong>Sentence Improvement:</strong> If I will be rich, I would buy a car. [Improve the sentence]</li>
+            <li><strong>Idioms & Phrases:</strong> What does “Burn the midnight oil” mean?</li>
+            <li><strong>One Word Substitution:</strong> A person who speaks many languages — __________</li>
+            <li><strong>Prepositions:</strong> He was accused ______ stealing money. (of/for)</li>
+            <li><strong>Reported Speech:</strong> She said, “I will call you tomorrow.” → Convert to indirect speech.</li>
+            <li><strong>Article Usage:</strong> He is ______ honest man. (a/an/the)</li>
+            <li><strong>Word Usage:</strong> Use the word “Break” as a noun in a sentence.</li>
+            <li><strong>Tense Correction:</strong> She go to school by bus every day. [Correct the verb]</li>
+            <li><strong>Logical Reasoning:</strong> All cats are animals. Some animals are wild. Can we say some cats are wild?</li>
+            <li><strong>Vocabulary:</strong> What does the word “Meticulous” mean?</li>
+            <li><strong>Phrase Replacement:</strong> He has too much work that he can’t handle. (a) so much (b) too many (c) such many</li>
+            <li><strong>Odd One Out:</strong> Apple, Banana, Tomato, Carrot</li>
+            <li><strong>Analogy:</strong> Book : Reading :: Fork : ?</li>
+            <li><strong>Spell Check:</strong> Identify the correctly spelled word: (a) Occassion (b) Occasion (c) Ocassion</li>
           </ul>
         </div>
       </section>
 
+
       {/* === Section: Tips & Tricks === */}
       <section className="grid gap-6 md:grid-cols-2 mb-12">
         <div className="bg-white rounded-xl shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-3">💡 Grammar Tips</h2>
+          <h2 className="text-2xl font-semibold text-teal-600 mb-3">💡 Grammar Tips</h2>
           <ul className="list-disc pl-5 text-lg space-y-2">
             <li>Always check subject-verb agreement in complex sentences.</li>
             <li>Use elimination in multiple-choice grammar questions.</li>
@@ -338,7 +493,7 @@ const VerbalAbilityTopic = () => {
         </div>
 
         <div className="bg-white rounded-xl shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-3">🧠 RC Solving Strategy</h2>
+          <h2 className="text-2xl font-semibold text-teal-600 mb-3">🧠 RC Solving Strategy</h2>
           <ul className="list-disc pl-5 text-lg space-y-2">
             <li>Skim first, then read closely for question-specific areas.</li>
             <li>Answer factual questions first, then inference-based ones.</li>
@@ -347,7 +502,7 @@ const VerbalAbilityTopic = () => {
         </div>
 
         <div className="bg-white rounded-xl shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-3">🔗 Para Jumbles Tricks</h2>
+          <h2 className="text-2xl font-semibold text-teal-600 mb-3">🔗 Para Jumbles Tricks</h2>
           <ul className="list-disc pl-5 text-lg space-y-2">
             <li>Find opening sentences (no pronouns, general statement).</li>
             <li>Match pairs based on logical connectors or flow.</li>
@@ -356,7 +511,7 @@ const VerbalAbilityTopic = () => {
         </div>
 
         <div className="bg-white rounded-xl shadow-md p-6">
-          <h2 className="text-2xl font-semibold text-purple-600 mb-3">📘 Vocabulary Memory Tips</h2>
+          <h2 className="text-2xl font-semibold text-teal-600 mb-3">📘 Vocabulary Memory Tips</h2>
           <ul className="list-disc pl-5 text-lg space-y-2">
             <li>Use Mnemonics: “Taciturn” → sounds like “Taxi turns quietly”.</li>
             <li>Use flashcards with examples in sentences.</li>
@@ -367,10 +522,10 @@ const VerbalAbilityTopic = () => {
 
       {/* === Section: More Info (Cards) === */}
       <section className="mb-10">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-6">📚 Additional Info</h2>
+        <h2 className="text-2xl font-semibold text-teal-600 mb-6">📚 Additional Info</h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="bg-white rounded-xl shadow-md p-4">
-            <h3 className="font-bold text-lg mb-2 text-purple-700">Common VA Topics</h3>
+            <h3 className="font-bold text-lg mb-2 text-teal-700">Common VA Topics</h3>
             <ul className="list-disc pl-4 space-y-1 text-[var(--color-text-muted)]">
               <li>Sentence Correction</li>
               <li>Reading Comprehension</li>
@@ -380,7 +535,7 @@ const VerbalAbilityTopic = () => {
           </div>
 
           <div className="bg-white rounded-xl shadow-md p-4">
-            <h3 className="font-bold text-lg mb-2 text-purple-700">Recommended Books</h3>
+            <h3 className="font-bold text-lg mb-2 text-teal-700">Recommended Books</h3>
             <ul className="list-disc pl-4 space-y-1 text-[var(--color-text-muted)]">
               <li>Word Power Made Easy – Norman Lewis</li>
               <li>High School English Grammar – Wren & Martin</li>
@@ -389,7 +544,7 @@ const VerbalAbilityTopic = () => {
           </div>
 
           <div className="bg-white rounded-xl shadow-md p-4">
-            <h3 className="font-bold text-lg mb-2 text-purple-700">Practice Strategy</h3>
+            <h3 className="font-bold text-lg mb-2 text-teal-700">Practice Strategy</h3>
             <ul className="list-disc pl-4 space-y-1 text-[var(--color-text-muted)]">
               <li>Daily 1 RC + 5 Grammar + 5 Vocab Questions</li>
               <li>Revise difficult words weekly</li>

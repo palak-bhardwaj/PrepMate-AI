@@ -4,12 +4,12 @@ import React from "react";
 
 const WebDevSection = () => {
   return (
-    <div className="px-6 py-12 max-w-6xl mx-auto">
-      <h1 className="text-4xl font-bold text-purple-700 mb-8 text-center">🌐 Web Development</h1>
+    <div className="px-6 py-12 max-w-6xl mx-auto text-[var(--color-text-main)]">
+      <h1 className="text-4xl font-bold text-[var(--color-accent)] mb-8 text-center">🌐 Web Development</h1>
 
       {/* Theory Card */}
-      <div className="bg-white dark:bg-[#1e1e2f] shadow-lg rounded-2xl p-6 mb-8">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-4">📚 Theory</h2>
+      <div className="card mb-8">
+        <h2 className="text-2xl font-semibold text-[var(--color-accent)] mb-4">📚 Theory</h2>
         <p className="mb-3 text-lg">
           Web development is the process of building websites and web applications that run in a browser. It involves both
           frontend (client-side) and backend (server-side) development.
@@ -23,17 +23,17 @@ const WebDevSection = () => {
       </div>
 
       {/* Code Examples Card */}
-      <div className="bg-white dark:bg-[#1e1e2f] shadow-lg rounded-2xl p-6 mb-8">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-4">💻 Code Examples</h2>
+      <div className="card mb-8">
+        <h2 className="text-2xl font-semibold text-[var(--color-accent)] mb-4">💻 Code Examples</h2>
         <h3 className="text-xl font-semibold mb-2">HTML + CSS + JavaScript Example</h3>
-        <pre className="bg-gray-900 text-white p-4 rounded-lg text-sm overflow-x-auto">
+        <pre className="bg-[var(--color-text-muted)] text-white p-4 rounded-lg text-sm overflow-x-auto">
 {`<!DOCTYPE html>
 <html>
 <head>
   <title>My Web Page</title>
   <style>
     body { font-family: sans-serif; background: #f0f0f0; text-align: center; }
-    button { padding: 10px 20px; background: purple; color: white; border: none; }
+    button { padding: 10px 20px; background: #ee6c4d; color: white; border: none; }
   </style>
 </head>
 <body>
@@ -44,7 +44,7 @@ const WebDevSection = () => {
         </pre>
 
         <h3 className="text-xl font-semibold mt-4 mb-2">React Example (Component)</h3>
-        <pre className="bg-gray-900 text-white p-4 rounded-lg text-sm overflow-x-auto">
+        <pre className="bg-[var(--color-text-muted)] text-white p-4 rounded-lg text-sm overflow-x-auto">
 {`import React from 'react';
 
 const Welcome = () => {
@@ -61,8 +61,8 @@ export default Welcome;`}
       </div>
 
       {/* Tips & Tricks Card */}
-      <div className="bg-white dark:bg-[#1e1e2f] shadow-lg rounded-2xl p-6 mb-8">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-4">🎯 Tips & Tricks</h2>
+      <div className="card mb-8">
+        <h2 className="text-2xl font-semibold text-[var(--color-accent)] mb-4">🎯 Tips & Tricks</h2>
         <ul className="list-disc list-inside space-y-2 text-lg">
           <li>Use semantic HTML for better SEO and accessibility.</li>
           <li>Learn Flexbox and Grid for responsive layouts.</li>
@@ -74,11 +74,11 @@ export default Welcome;`}
       </div>
 
       {/* More Info & Tools Card */}
-      <div className="bg-white dark:bg-[#1e1e2f] shadow-lg rounded-2xl p-6 mb-8">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-4">🔍 More Info & Tools</h2>
+      <div className="card mb-8">
+        <h2 className="text-2xl font-semibold text-[var(--color-accent)] mb-4">🔍 More Info & Tools</h2>
         <div className="grid md:grid-cols-2 gap-4 text-lg">
-          <div className="p-4 rounded-lg border dark:border-gray-700">
-            <h3 className="font-semibold text-purple-500">Frontend Tools</h3>
+          <div className="p-4 rounded-lg border border-[var(--color-card-border)]">
+            <h3 className="font-semibold text-[var(--color-text-muted)]">Frontend Tools</h3>
             <ul className="list-disc list-inside">
               <li>VS Code</li>
               <li>Tailwind CSS</li>
@@ -86,8 +86,8 @@ export default Welcome;`}
               <li>Figma (for UI design)</li>
             </ul>
           </div>
-          <div className="p-4 rounded-lg border dark:border-gray-700">
-            <h3 className="font-semibold text-purple-500">Backend Tools</h3>
+          <div className="p-4 rounded-lg border border-[var(--color-card-border)]">
+            <h3 className="font-semibold text-[var(--color-text-muted)]">Backend Tools</h3>
             <ul className="list-disc list-inside">
               <li>Node.js + Express</li>
               <li>Django / Flask (Python)</li>
@@ -99,13 +99,13 @@ export default Welcome;`}
       </div>
 
       {/* Conclusion & Interview Questions */}
-      <div className="bg-white dark:bg-[#1e1e2f] shadow-lg rounded-2xl p-6">
-        <h2 className="text-2xl font-semibold text-purple-600 mb-4">📝 Conclusion & Interview Qs</h2>
+      <div className="card">
+        <h2 className="text-2xl font-semibold text-[var(--color-accent)] mb-4">📝 Conclusion & Interview Qs</h2>
         <p className="text-lg mb-4">
           Web development is an essential skill in modern tech. Whether you aim to become a frontend, backend, or full-stack
           developer, mastering the core tools and frameworks is crucial.
         </p>
-        <h3 className="text-xl font-semibold text-purple-500 mb-2">Sample Interview Questions:</h3>
+        <h3 className="text-xl font-semibold text-[var(--color-text-muted)] mb-2">Sample Interview Questions:</h3>
         <ul className="list-disc list-inside space-y-2 text-lg">
           <li>What is the difference between HTML and HTML5?</li>
           <li>How does the DOM work in JavaScript?</li>
