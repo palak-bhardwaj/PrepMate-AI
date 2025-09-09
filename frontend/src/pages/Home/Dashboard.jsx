@@ -10,7 +10,7 @@ import moment from "moment";
 import Modal from '../../components/Modal';
 import CreateSessionForm from './CreateSessionForm';
 import DeleteAlertContent from '../../components/DeleteAlertContent';
-import PrepTopicsGrid from '../../components/Cards/PrepTopicsGrid';
+
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -72,13 +72,6 @@ const Dashboard = () => {
           ))}
         </div>
 
-        {/* 🧠 Pre-Filled Prep Topics Grid */}
-        <div className="mt-10 px-4 md:px-0">
-          <h2 className="text-xl font-semibold mb-4 text-[var(--color-text-main)]">
-            Explore Important Topics for Placements
-          </h2>
-          <PrepTopicsGrid />
-        </div>
       </div>
 
       {/* ✨ Create Session Modal */}

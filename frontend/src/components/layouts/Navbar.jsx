@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../context/userContext';
 import { LuPlus } from 'react-icons/lu';
-import { FaPlay } from 'react-icons/fa';
 
 const Navbar = ({ onAddSession }) => {
   const { user, clearUser } = useContext(UserContext);
