@@ -14,10 +14,6 @@ const Navbar = ({ onAddSession }) => {
     navigate('/');
   };
 
-  const startInterview = () => {
-    navigate('/interview-instructions');
-  };
-
   return (
     <div className="h-14 bg-white border-b border-[var(--color-card-border)] backdrop-blur-[2px] px-4 md:px-0 sticky top-0 z-30 shadow-sm">
       <div className="w-9/10 container mx-auto flex items-center justify-between gap-4 h-full">
@@ -47,21 +43,6 @@ const Navbar = ({ onAddSession }) => {
                 </button>
               </>
             )}
-
-            {/* Start Interview Button */}
-            <button
-              onClick={startInterview}
-              className="hidden sm:flex items-center gap-2 px-4 py-1.5 text-sm font-medium text-white bg-green-600 hover:bg-green-700 rounded-full transition"
-            >
-              <FaPlay className="text-sm" />
-              Start Interview
-            </button>
-            <button
-              onClick={startInterview}
-              className="sm:hidden p-2 rounded-full bg-green-600 text-white hover:bg-green-700"
-            >
-              <FaPlay className="text-sm" />
-            </button>
 
             {/* Logout */}
             <button onClick={handleLogout} className="btn-primary px-4 py-1.5 text-sm">

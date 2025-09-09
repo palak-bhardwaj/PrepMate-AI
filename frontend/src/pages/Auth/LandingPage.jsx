@@ -2,12 +2,12 @@ import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { LuSparkles } from "react-icons/lu";
 
-import main from "../assets/main.png";
-import { APP_FEATURES } from "../utils/data";
-import Modal from '../components/Modal';
-import Login from './Auth/Login';
-import SignUp from './Auth/SignUp';
-import { UserContext } from '../context/userContext';
+import main from "../../assets/main.png";
+import { APP_FEATURES } from "../../utils/data";
+import Modal from '../../components/Modal';
+import Login from './Login';
+import SignUp from './SignUp';
+import { UserContext } from '../../context/userContext';
 
 const LandingPage = () => {
   const { user, clearUser } = useContext(UserContext);
